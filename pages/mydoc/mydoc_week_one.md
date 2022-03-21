@@ -5,26 +5,58 @@ permalink: mydoc_week_one.html
 folder: mydoc
 ---
 
-## Overview
+## Goal
 
-This site provides documentation, training, and other notes for the Jekyll Documentation theme. There's a lot of information about how to do a variety of things here, and it's not all unique to this theme. But by and large, understanding how to do things in Jekyll depends on how your theme is coded. As a result, these additional details are provided.
+* Introductions
+* System set up
+* Run hello world program
+* Logistics
 
-The instructions here are geared towards technical writers working on documentation. You may have a team of one or more technical writers working on documentation for multiple projects. You can use this same theme to author all of your documentation for each of your products. The theme is built to accommodate documentation for multiple products on the same site.
+## Downloads
+For this course you will need Java (Programming language SDK) and IntelliJ (Java Editor). After you click on the following links, select your Operating System and Download, Wait till everyone is done with downloads and we will go thru the installation process..
 
-## Survey of features
+* [Download Java](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) (you will need to register with oracle, you will need an email address)
+* [Download community edition of IntelliJ](https://www.jetbrains.com/idea/download/#section=windows)
 
-Some of the more prominent features of this theme include the following:
+## Introductions
+* Name
+* Hobby
+* FTC team
+* Expectations from the class
+* Programming experience
 
-* Bootstrap framework
-* [Navgoco multi-level sidebar](http://www.komposta.net/article/navgoco) for table of contents
-* Ability to specify different sidebars for different products
-* Top navigation bar with drop-down menus
-* Notes, tips, and warning information notes
-* Tags for alternative navigation
-* Advanced landing page layouts from the [Modern Business theme](http://startbootstrap.com/template-overviews/modern-business/).
+## Important Links
 
-## Getting started
+* [Course Material](https://www.w3schools.com/java/default.asp)
+* [API](https://docs.oracle.com/javase/8/docs/api/) (We will go over this in later classes)
 
-To get started, see [Getting Started][index].
+## Logistics
 
-{% include links.html %}
+* Join Java slack channel.
+* Ask Questions, if you have a question most probably someone else has the same question. Instructors would appreciate if you ask questions during the class. Instructors code on a day to day basis so we can make assumptions that some terms are understood. Asking questions will help instructors take a step back and clarify.
+* We will be coding during the class, You will need a laptop or desktop during the class.
+* Normal weekly routine
+  * Goal for the week.
+  * Summarize last weeks content.
+  * Kahoot to test last weeks content.
+  * Talk thru previous weeks assignment.
+  * New content for the week. Course content will be broken out into sections. 
+  * Exercise or Kahoot for each section.
+  * Discuss assignment for the week.
+* Office hours - Every week Thursday 4-5. If you have any questions from Tuesdays session, issues with installation, questions on home work assignment you can ask during office hours. Zoom link below.
+* You will have an assignment (coding exercise or suggested reading material) every week. For any reason if you could not complete the exercise it is suggested you complete the exercise next week. The course builds on assignments so its important to complete assignments.
+* Course Project - We will be working towards a simple eCommerce Application (similar to amazon).
+* FTC Section of course track - We will be using a simulator to test code to be deployed on the robot.
+* Important course information will be pinned to slack channel.
+
+## Hello World Exercise.
+
+## Creating a new project in IntelliJ
+
+Find IntelliJ IDEA CE (you may have an icon in your Desktop or Applications), Open it.
+
+File -> New Project
+
+Setting a hello world exercise - [Getting started in FTC](https://gm0.org/en/stable/docs/getting-started-in-ftc/index.html)
+
+
