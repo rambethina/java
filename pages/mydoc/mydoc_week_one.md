@@ -43,12 +43,12 @@ For this course you will need Java (Programming language SDK) and IntelliJ (Java
   * New content for the week. Course content will be broken out into sections. 
   * Exercise or Kahoot for each section.
   * Discuss assignment for the week.
-* Office hours - Every week Thursday 4-5. If you have any questions from Tuesdays session, issues with installation, questions on home work assignment you can ask during office hours. Zoom link below.
-* You will have an assignment (coding exercise or suggested reading material) every week. Even if you are late, I would recommend submiting your assignment, even if your assignment does not work, please submit and instructor will work with you to get your assignment working. The course builds on assignments so its important to complete assignments. 
+* Office hours - Every week Thursday 4-5. If you have any questions from Tuesdays session, issues with installation, questions on home work assignment you can ask during office hours. Zoom link will be pinned to slack channel.
+* You will have an assignment (coding exercise or suggested reading material) every week. Even if you are late assignment does not work, I would recommend submiting your assignment and instructor will work with you to get your assignment working. The course builds on assignments so its important to complete assignments. 
 * Course Project - We will be working towards a simple eCommerce Application (similar to amazon).
 * FTC Section of course track - We will be using a simulator to test code to be deployed on the robot.
 * Important course information will be pinned to slack channel.
-* If anyone wants to teach a small section, they are welcome (Instructor will help as needed.)
+* If anyone wants to teach a small section, you are welcome, Let the instructor know. (Instructor will help as needed.)
 
 ## High level course structure
 * Week 1 - Logistics, System set up.
@@ -100,5 +100,7 @@ public class HelloWorld {
 FAQ
 
 * [How to Determine if Windows is x64 or x86](https://www.techwalla.com/articles/how-to-determine-if-windows-is-x64-or-x86)
+* In addition to [w3 schools](https://www.w3schools.com/java/default.asp) , are there other resources I can look at.
+  * [Geeks for geeks](https://www.geeksforgeeks.org/java/?ref=shm)
 
 
