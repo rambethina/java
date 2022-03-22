@@ -86,7 +86,13 @@ public class HelloWorld {
 ```
 
 ## Assignments
-* [Install Git on your system.](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) , if you are using a mac git is already installed.
+* [Install Git on your system.](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
+  * [Windows](https://git-scm.com/download/win), You can also follow the [video](https://www.simplilearn.com/tutorials/git-tutorial/git-installation-on-windows), Watch video upto 1min 30 sec.
+  * if you are using a mac git may already be installed. On your terminal type in `git --version` , If git is not installed you will be prompted to install git. If git is installed you may see something similar to below
+  ```
+  git --version
+  git version 2.24.3 (Apple Git-128)
+  ```
 * [Create a github account.](https://www.wikihow.com/Create-an-Account-on-GitHub)
 * Suggested reading. [Getting started in FTC](https://gm0.org/en/stable/docs/getting-started-in-ftc/index.html)
 
