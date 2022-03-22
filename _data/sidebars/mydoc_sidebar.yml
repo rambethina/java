@@ -22,11 +22,6 @@ entries:
   - title: Overview
     output: web, pdf
     folderitems:
-
-    - title: Get started
-      url: /index.html
-      output: web, pdf
-      type: homepage
    
     - title: Week one
       url: /mydoc_week_one.html
