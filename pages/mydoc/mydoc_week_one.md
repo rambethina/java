@@ -44,10 +44,28 @@ For this course you will need Java (Programming language SDK) and IntelliJ (Java
   * Exercise or Kahoot for each section.
   * Discuss assignment for the week.
 * Office hours - Every week Thursday 4-5. If you have any questions from Tuesdays session, issues with installation, questions on home work assignment you can ask during office hours. Zoom link below.
-* You will have an assignment (coding exercise or suggested reading material) every week. For any reason if you could not complete the exercise it is suggested you complete the exercise next week. The course builds on assignments so its important to complete assignments.
+* You will have an assignment (coding exercise or suggested reading material) every week. Even if you are late, I would recommend submiting your assignment, even if your assignment does not work, please submit and instructor will work with you to get your assignment working. The course builds on assignments so its important to complete assignments. 
 * Course Project - We will be working towards a simple eCommerce Application (similar to amazon).
 * FTC Section of course track - We will be using a simulator to test code to be deployed on the robot.
 * Important course information will be pinned to slack channel.
+* If anyone wants to teach a small section, they are welcome (Instructor will help as needed.)
+
+## High level course structure
+* Week 1 - Logistics, System set up.
+* Week 2 - Deep dive into Hello World program, Variables.
+* Week 3 - Type Casting, Operators, Methods
+* Week 4 - Methods Revisited, String & Math API
+* Week 5 - If statements, Logical operators, while loop
+* Week 6 - For loops, Arrays
+* Week 7 - OOP, Classes
+* Week 8 - Classes revisited, Exercises.
+* Week 9 - Inheritance, Abstraction, Polymorphism, Project discussion
+* Week 10 - Data structures, Exceptions, Project discussion
+* Week 11 - FTC Introduction, Op Modes, Working with motors
+* Week 12 - Encoders, Servo, Distance Sensor
+* Week 13 - Road Runner (Drive to a location, uses encoders internally, pid controller / feedforward control, Odometry / Localization)
+* Week 14 - A * (Path planning algorithm)
+* Week 15 - Tensor Flow
 
 ## Hello World Exercise.
 
@@ -57,11 +75,21 @@ Find IntelliJ IDEA CE (you may have an icon in your Desktop or Applications), Op
 
 File -> New Project
 
-Setting a hello world exercise - [Getting started in FTC](https://gm0.org/en/stable/docs/getting-started-in-ftc/index.html)
+Setting a hello world exercise
+
+```
+public class HelloWorld {
+    public static void main(String args[]) {
+        System.out.println("Replace Content");
+    }
+}
+```
 
 ## Assignments
 * [Install Git on your system.](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) , if you are using a mac git is already installed.
 * [Create a github account.](https://www.wikihow.com/Create-an-Account-on-GitHub)
+* Suggested reading. [Getting started in FTC](https://gm0.org/en/stable/docs/getting-started-in-ftc/index.html)
+
 
 FAQ
 
