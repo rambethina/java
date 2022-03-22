@@ -59,4 +59,12 @@ File -> New Project
 
 Setting a hello world exercise - [Getting started in FTC](https://gm0.org/en/stable/docs/getting-started-in-ftc/index.html)
 
+## Assignments
+* [Install Git on your system.](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) , if you are using a mac git is already installed.
+* [Create a github account.](https://www.wikihow.com/Create-an-Account-on-GitHub)
+
+FAQ
+
+* [How to Determine if Windows is x64 or x86](https://www.techwalla.com/articles/how-to-determine-if-windows-is-x64-or-x86)
+
 
