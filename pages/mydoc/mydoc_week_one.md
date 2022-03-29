@@ -27,7 +27,7 @@ For this course you will need Java (Programming language SDK) and IntelliJ (Java
 
 ## Important Links
 
-* [Course Material](https://www.w3schools.com/java/default.asp)
+* [Course Material w3schools](https://www.w3schools.com/java/default.asp)
 * [API](https://docs.oracle.com/javase/8/docs/api/) (We will go over this in later classes)
 
 ## Logistics
