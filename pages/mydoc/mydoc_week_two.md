@@ -5,7 +5,7 @@ permalink: mydoc_week_two.html
 folder: mydoc
 ---
 
-## Goal
+## Goal - Hello World exercise
 
 * Kahoot (Get used to Kahoot, Logistics)
 * Hello World Program
@@ -13,6 +13,8 @@ folder: mydoc
 * In Class Exercise
 * Comments
 * Kahoot (Week 2 course content, Basics, Comments)
+* Variables
+* Common data types (if we have time, we will look at more data types in next class)
 * Assignment
   
 ## Hello World Exercise.
