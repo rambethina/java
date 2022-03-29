@@ -7,12 +7,12 @@ folder: mydoc
 
 ## Goal
 
-* Kahoot
+* Kahoot (Get used to Kahoot, Logistics)
 * Hello World Program
 * Deep dive Hello World Program ()
-* Comments
 * In Class Exercise
-* Kahoot
+* Comments
+* Kahoot (Week 2 course content, Basics, Comments)
 * Assignment
   
 ## Hello World Exercise.
@@ -22,9 +22,7 @@ folder: mydoc
 Find IntelliJ IDEA CE (you may have an icon in your Desktop or Applications), Open it.
 
 * Create a New Project
-   ![ScreenShot](/images/new_project.png "New project")
 * In the next screen make sure SDK is populated.
-    ![ScreenShot](/images/new_project_skd.png "New project")
 * Click on Next.
 * Give a project name.
 
@@ -49,7 +47,19 @@ public class WeekTwoHelloWorld {
 }
 ```
 
+## Observations
+* Java is case sensitive. (ie WeekTwoHelloWorld is different from weektwoHelloWorld,  weektwoHelloWorld would be considered a new class.)
+* Name of file and class should be the same.
+* In Java everything must be in a class.
+* In Java if you want to print something, you will normally use System.out.println(), and pass the contents to print within ""
+
 ## In Class Exercise.
+
+* Create a program to print one of the following
+  * Java is an OOP (Object oriented programming).
+  * In Java everything must be in a class.
+  * Java is case sensitive. 
+  * In Java comments will not be executed.
 
 Whats wrong with the code below.
 
@@ -79,6 +89,14 @@ public class WeekTwoHelloWorld {
     }
 }
 ```
+
+## Comments
+* Refer [w3schools](https://www.w3schools.com/java/java_comments.asp)
+
+## Kahoot
+
+## Variables
+* Refer [w3schools](https://www.w3schools.com/java/java_variables.asp)
 
 ## Assignments
 * [Install Git on your system.](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
