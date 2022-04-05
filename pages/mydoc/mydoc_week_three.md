@@ -6,11 +6,12 @@ folder: mydoc
 ---
 
 ## Goal - Variables Introduction, Data Types, String Class
-* [Variables](mydoc_week_thress.html#goal---variables-introduction)
-* Data Types
-* In Class Exercise
-* Method - brief introduction
-* String Class & Use predefined methods.
+* [Variables](https://rambethina.github.io/java/mydoc_week_three.html#variables-introduction)
+* [Data Types](https://rambethina.github.io/java/mydoc_week_three.html#data-types)
+* [In Class Exercise](https://rambethina.github.io/java/mydoc_week_three.html#in-class-exercise)
+* [Method - brief introduction](https://rambethina.github.io/java/mydoc_week_three.html#methods)
+* [String Class & Use predefined methods.](https://rambethina.github.io/java/mydoc_week_three.html#string-methods)
+* [Assignment - Input cleanser](https://rambethina.github.io/java/mydoc_week_three.html#string-methods)
 
 ## Variables Introduction
 * Refer [w3schools](https://www.w3schools.com/java/java_variables.asp)
@@ -61,4 +62,25 @@ public class WeekThreeExOne {
   * toUpperCase
 * Example methods that take an argument
   * substring
+
+## Assignment - Input cleanser
+
+Normally user input data needs to be cleaned. As part of our program we are going to implement a simple input cleanser.
+
+ Assume that we do not want '_' in first name and last name,
+
+ Write a program that replaces any occurence of _ with a space.
+
+ ```
+ public class WeekThreeExOne {
+    public static void main(String args[]) {
+
+        String firstName = "Ram_Bethina";
+
+        System.out.println("First Name : "+firstName.<HOME WORK, REPLACE WITH A FUNCTION IN THE STRING CLASS THAT REPLACES _ WITH EMPTY SPACE>);
+    }
+}
+
+OUTPUT SHOULD BE First Name : Ram Bethina
+```
 
