@@ -58,6 +58,24 @@ public class WeekThreeExOne {
 * Example methods that take an argument
   * substring
 
+
+Example - Find length of first name String.
+```
+public class WeekThreeExOne {
+    public static void main(String args[]) {
+
+        String firstName = "Ram_Bethina";
+
+        System.out.println("First Name : "+firstName.length());
+
+        
+    }
+}
+```
+
+## In Class Exercise
+* Convert values provided in First Name to Upper Case, ie if I declare `String firstName = "Ram Bethina"` output of my program should be `First Name : RAM BETHINA`
+
 ## Assignment - Input cleanser
 
 Normally user input data needs to be cleaned. As part of our program we are going to implement a simple input cleanser.
