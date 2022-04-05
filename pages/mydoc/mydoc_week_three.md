@@ -57,7 +57,7 @@ public class WeekThreeExOne {
 
 ## Methods
 * Refer [w3schools](https://www.w3schools.com/java/java_methods.asp), We will revisit methods in much more detail in the next couple of weeks.
-* In general a method is a block of code that does something. For example length method in [String class](https://docs.oracle.com/javase/8/docs/api/) calculates the length of the string. A method normally has the following
+* In general a method is a block of code that does something. For example length method in [String class](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) calculates the length of the string. A method normally has the following
   * name of method
   * return value and type
   * arguments/parameters
