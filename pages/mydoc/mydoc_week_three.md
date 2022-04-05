@@ -148,9 +148,9 @@ Hint, you may want to use the following String API methods.
 * concat
 
 ## Assignment submission
-I would prefer if you send me a link to your project in github, If you dont have time to get git working you can slack me the assignment for this week.
-If you completed last weeks assignment you may have already created a github account.
-Please follow the [link](https://www.youtube.com/watch?v=mf2-MOl0VXY) which talks thru IntelliJ integration with git and github. 
+* I would prefer if you send me a link to your project in github, If you dont have time to get git working you can slack me the assignment for this week.
+* If you completed last weeks assignment you may have created a github account. If not create a github account.
+* Please follow the [link](https://www.youtube.com/watch?v=mf2-MOl0VXY) which talks thru IntelliJ integration with git and github. 
 
 
 
