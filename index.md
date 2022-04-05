@@ -8,9 +8,9 @@ summary: Summary of the course
 ---
 
 ## High level course structure
-* Week 1 - Logistics, System set up.
-* Week 2 - Deep dive into Hello World program, Variables.
-* Week 3 - Type Casting, Operators, Methods
+* [Week 1](https://rambethina.github.io/java/mydoc_week_one.html) - Logistics, System set up.
+* [Week 2](https://rambethina.github.io/java/mydoc_week_two.html) - Deep dive into Hello World program, Variables.
+* [Week 3](https://rambethina.github.io/java/mydoc_week_three.html) - Type Casting, Operators, Methods
 * Week 4 - Methods Revisited, String & Math API
 * Week 5 - If statements, Logical operators, while loop
 * Week 6 - For loops, Arrays
