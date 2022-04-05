@@ -5,6 +5,8 @@ permalink: mydoc_week_three.html
 folder: mydoc
 ---
 
+## Refresher Hello World Exercise.
+
 ## Variables Introduction
 * Refer [w3schools](https://www.w3schools.com/java/java_variables.asp)
 
@@ -41,7 +43,7 @@ Create a program to print above registration details. As a part of the exercise 
 * Initialize variables with values.
 * Solving any compilation issues.
 * 
-Example - In the following example we created a variable called firstName of type String and assigned it a value Ram, As a part of the exercise add remaining registration fields.
+Example - In the following example we created a variable called firstName of type String and assigned it a value Ram, As a part of the exercise add you will need to add remaining registration fields.
 
 
 ```
@@ -129,7 +131,7 @@ OUTPUT SHOULD BE
 `First Name : Ram Bethina`
 
 Hint - You may want to use the following method on String class.
-* replaceAll - Look at API for additional details., But at a high level this takes 2 arguments. As an example replaceAll(" ", "_") will replace all occurences for space with underscore
+* replaceAll - Look at API for additional details., But at a high level this takes 2 arguments. As an example `replaceAll(" ", "_")` will replace all occurences for space with underscore
 
 PART 2 - (This may be a bit more challenging but I would like you to give it a try.) Write a program that capitalizes the first letter of first name.
 So if I declare my first name to be 
@@ -143,6 +145,12 @@ OUTPUT SHOULD BE
 Hint, you may want to use the following String API methods.
 * substring
 * toUpperCase
+* concat
+
+## Assignment submission
+I would prefer if you send me a link to your project in github, If you dont have time to get git working you can slack me the assignment for this week.
+If you completed last weeks assignment you may have already created a github account.
+Please follow the [link](https://www.youtube.com/watch?v=mf2-MOl0VXY) which talks thru IntelliJ integration with git and github. 
 
 
 
