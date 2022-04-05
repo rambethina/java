@@ -17,7 +17,7 @@ public class WeekThreeExOne {
         // variable_type variable_name = value;
         int year = 2022;                    // Integer (whole number)
         char gender = 'M';                  // Character
-        boolean isPrimaryEmail = true;      // Boolean Only value values are true or false
+        boolean isPrimaryEmail = true;      // Boolean valid values are true or false
         String firstName = "Ram";           // String
     }
 }
@@ -71,7 +71,7 @@ public class WeekThreeExOne {
   * substring
 
 
-Example - Find length of first name String.
+Example - Find length of first name String. (Note - string length method does not take any input arguments/parameters, returns a int value that is the length of the string)
 ```
 public class WeekThreeExOne {
     public static void main(String args[]) {
@@ -86,7 +86,25 @@ public class WeekThreeExOne {
 ```
 
 ## In Class Exercise
-* Convert values provided in First Name to Upper Case, ie if I declare `String firstName = "Ram Bethina"` output of my program should be `First Name : RAM BETHINA`
+* Convert values provided in First Name to Upper Case, ie if I declare `String firstName = "Ram Bethina"` output of my program should be `First Name : RAM BETHINA`, HINT - User toUpperCase() method.
+
+
+Example - concatenate 2 strings. (Note - string concat takes an input argument and returns a contactenated string)
+```
+public class WeekThreeExOne {
+    public static void main(String args[]) {
+
+        String firstName = "Ram";
+
+        System.out.println("First Name : "+firstName.concat(" Bethina"));
+
+        
+    }
+}
+```
+## In Class Exercise
+* Assume `String fullName = "abraham lincoln";` Write a program that prints out first 8 characters, HINT use substring method. 
+  
 
 ## Assignment - Input cleanser
 
@@ -94,7 +112,7 @@ Normally user input data needs to be cleaned. As part of our program we are goin
 
  Assume that we do not want '_' in first name and last name,
 
-PART 1 - Write a program that replaces any occurence of underscore `_` with a space ` `.
+PART 1 - Write a program that replaces any occurence of underscore `_` with a space `  `.
 
  ```
  public class WeekThreeExOne {
