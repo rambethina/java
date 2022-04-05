@@ -5,14 +5,6 @@ permalink: mydoc_week_three.html
 folder: mydoc
 ---
 
-## Goal - Variables Introduction, Data Types, String Class
-* [Variables](https://rambethina.github.io/java/mydoc_week_three.html#variables-introduction)
-* [Data Types](https://rambethina.github.io/java/mydoc_week_three.html#data-types)
-* [In Class Exercise](https://rambethina.github.io/java/mydoc_week_three.html#in-class-exercise)
-* [Method - brief introduction](https://rambethina.github.io/java/mydoc_week_three.html#methods)
-* [String Class & Use predefined methods.](https://rambethina.github.io/java/mydoc_week_three.html#string-methods)
-* [Assignment - Input cleanser](https://rambethina.github.io/java/mydoc_week_three.html#string-methods)
-
 ## Variables Introduction
 * Refer [w3schools](https://www.w3schools.com/java/java_variables.asp)
 
@@ -31,11 +23,14 @@ Assume we are going to collect the following information during registration.
 - DOB Day
 - DOB Year
 
-Create a program to print registration details.
+Create a program to print above registration details. As a part of the exercise you will practice.
+* Syntax for declaring a variable.
+* Choosing the correct data type.
+* Initialize variables with values.
+* Solving any compilation issues.
+* 
+Example - In the following example we created a variable called firstName of type String and assigned it a value Ram, As a part of the exercise add remaining registration fields.
 
-Example - In the following example we created a variable called firstName of type String and assigned it a value Ram
-
-Goal - Use correct data types to initialize values.
 
 ```
 public class WeekThreeExOne {
@@ -69,7 +64,7 @@ Normally user input data needs to be cleaned. As part of our program we are goin
 
  Assume that we do not want '_' in first name and last name,
 
- Write a program that replaces any occurence of _ with a space.
+PART 1 - Write a program that replaces any occurence of underscore `_` with a space ` `.
 
  ```
  public class WeekThreeExOne {
@@ -80,7 +75,26 @@ Normally user input data needs to be cleaned. As part of our program we are goin
         System.out.println("First Name : "+firstName.<HOME WORK, REPLACE WITH A FUNCTION IN THE STRING CLASS THAT REPLACES _ WITH EMPTY SPACE>);
     }
 }
-
-OUTPUT SHOULD BE First Name : Ram Bethina
 ```
+OUTPUT SHOULD BE 
+
+`First Name : Ram Bethina`
+
+Hint - You may want to use the following method on String class.
+* replaceAll - Look at API for additional details., But at a high level this takes 2 arguments. As an example replaceAll(" ", "_") will replace all occurences for space with underscore
+
+PART 2 - (This may be a bit more challenging but I would like you to give it a try.) Write a program that capitalizes the first letter of first name.
+So if I declare my first name to be 
+
+`String firstName = "ram bethina";`
+
+OUTPUT SHOULD BE 
+
+`First Name : Ram bethina`
+
+Hint, you may want to use the following String API methods.
+* substring
+* toUpperCase
+
+
 
