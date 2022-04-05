@@ -29,6 +29,9 @@ entries:
     - title: Week Two
       url: /mydoc_week_two.html
       output: web, pdf
+    - title: Week Three
+      url: /mydoc_week_three.html
+      output: web, pdf
 
 
 
