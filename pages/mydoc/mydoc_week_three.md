@@ -11,6 +11,18 @@ folder: mydoc
 ## Data types
 * Refer [w3schools](https://www.w3schools.com/java/java_data_types.asp)
 
+```
+public class WeekThreeExOne {
+    public static void main(String args[]) {
+        // variable_type variable_name = value;
+        int year = 2022;                    // Integer (whole number)
+        char gender = 'M';                  // Character
+        boolean isPrimaryEmail = true;      // Boolean Only value values are true or false
+        String firstName = "Ram";           // String
+    }
+}
+```
+
 ## In Class Exercise
 For our final project we will build a simple eCommerce App (Similar to amazon), Part of the project will involve registration.
 Assume we are going to collect the following information during registration.
