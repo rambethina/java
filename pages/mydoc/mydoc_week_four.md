@@ -7,11 +7,14 @@ folder: mydoc
 
 ## Assignment
 
-## Next Week Volunteers to teach following sections.
+## Next Week - Volunteers to teach following sections.
 * [Arithmetic Operators](https://www.w3schools.com/java/java_operators.asp)
 * [Java Comparison Operators](https://www.w3schools.com/java/java_operators.asp)
 
 ## Refresher Week 1 - 3.
+* Class naming convention.
+* main method.
+* methods/functions.
 
 ## Revisit Assignment
 
@@ -31,8 +34,8 @@ public class WeekFourExOne {
 }
 ```
 
-## In Class Exercise 1
-Create a method that prints any string. Call method in your main method.
+## In Class Exercise 1 (Methods with no arguments & does not return a value)
+Create a method that prints any string. Call newly created method in your main method.
 
 ## Methods Continued
 * Methods with arguments and void return type
@@ -50,10 +53,10 @@ public class WeekFourExTwo {
 }
 ```
 
-## In Class Exercise 2
-Change method you created in exercise 1, Take an input string, and print the value of input parameter.
+## In Class Exercise 2 (Methods with arguments & does not return a value)
+Create a new method called `printString` that takes an input string, and print the value of input parameter.
 
-To help you out assume the following main method implementation. As part of this exercise you will implement printString method.
+Assume the following main method implementation. As part of this exercise you will implement printString method.
 
 ```
     public static void main(String args[]) {
@@ -82,7 +85,7 @@ Output should be
 ## Methods Continued
 * Methods with arguments and return type
 
-## In Class Exercise 3
+## In Class Exercise 3 (Methods with arguments & return a value)
 Expand on assignment from last week or what we covered in class.
 As part of the assignment we santized first name, as a next step sanitize last name too.
 Use method & avoid code duplication.
@@ -92,12 +95,38 @@ Goals - Use methods where possible.
 
 Continuation of Validate & Sanitize Input. We will build on assignment from previous week and course work today.
 
-* First name and Last name must not contain any `_` and they should start with a Capital Letter. (Week 3 assignment & course work today.)
+Write a program that takes care of the following sanitization rules.
+
+* First name and Last name must should start with a Capital Letter. (Week 3 assignment & course work today.)
 * Phone numbers can be input in any of the following patterns, but must be sanitized, Look below for possible input values and output value.
   Input
   * 555-123-1245
-  * (555) 123-1245 
+  * (555) 123-1245
   * 555.123.1245
 
  Output
    5551231245
+
+Sample starting Class, Feel free to change values.
+
+```
+public class WeekFourAssignment {
+
+    public static void main(String args[]) {
+        String firstName = "abraham";
+        String lastName = "lincoln";
+
+        String primaryPhone = "555-123-1245";
+        String secondaryPhone = "555.123.1246";
+
+        // Call to methods that sanitize input.
+
+        // Print results.
+    }
+    
+    //method to sanitize names
+
+    //method to sanitize phone numbers
+
+}
+```
