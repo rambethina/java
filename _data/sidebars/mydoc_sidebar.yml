@@ -32,6 +32,9 @@ entries:
     - title: Week Three
       url: /mydoc_week_three.html
       output: web, pdf
+    - title: Week Four
+      url: /mydoc_week_four.html
+      output: web, pdf
 
 
 
