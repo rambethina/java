@@ -7,8 +7,9 @@ folder: mydoc
 
 ## Assignment
 
-## Next Week Volunteers
-Operators
+## Next Week Volunteers to teach following sections.
+* [Arithmetic Operators](https://www.w3schools.com/java/java_operators.asp)
+* [Java Comparison Operators](https://www.w3schools.com/java/java_operators.asp)
 
 ## Refresher Week 1 - 3.
 
@@ -81,7 +82,7 @@ Output should be
 ## Methods Continued
 * Methods with arguments and return type
 
-## In Class Exercise 2
+## In Class Exercise 3
 Expand on assignment from last week or what we covered in class.
 As part of the assignment we santized first name, as a next step sanitize last name too.
 Use method & avoid code duplication.
@@ -92,7 +93,7 @@ Goals - Use methods where possible.
 Continuation of Validate & Sanitize Input. We will build on assignment from previous week and course work today.
 
 * First name and Last name must not contain any `_` and they should start with a Capital Letter. (Week 3 assignment & course work today.)
-* Phone numbers can be input in any of the following patterns, but must be sanitized.
+* Phone numbers can be input in any of the following patterns, but must be sanitized, Look below for possible input values and output value.
   Input
   * 555-123-1245
   * (555) 123-1245 
