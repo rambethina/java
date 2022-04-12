@@ -12,8 +12,12 @@ folder: mydoc
 * [Java Comparison Operators](https://www.w3schools.com/java/java_operators.asp)
 
 ## Refresher Week 1 - 3.
-* Class naming convention.
+* Naming convention 
+  * class - PascalCase
+  * methods - camelCase
+  * variables - camelCase
 * main method.
+* variables & data types
 * methods/functions.
 
 ## Revisit Assignment
@@ -89,6 +93,16 @@ Output should be
 Expand on assignment from last week or what we covered in class.
 As part of the assignment we santized first name, as a next step sanitize last name too.
 Use method & avoid code duplication.
+
+## [Array data type](https://www.w3schools.com/java/java_arrays.asp)
+
+Example
+```
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+cars[0] = "Opel";
+System.out.println(cars[0]);
+```
+
 
 ## Assignment
 Goals - Use methods where possible.
