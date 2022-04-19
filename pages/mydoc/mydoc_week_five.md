@@ -7,6 +7,11 @@ folder: mydoc
 
 ## Assignment
 
+## In Class Exercise
+
+## Methods/Functions summary
+* Why
+
 ## Operators
 * [Arithmetic Operators](https://www.w3schools.com/java/java_operators.asp)
 * [Java Comparison Operators](https://www.w3schools.com/java/java_operators.asp)
@@ -30,7 +35,7 @@ public class WeekFiveEx1 {
 //        System.out.println(++x);
 //        System.out.println(x);
 
-        //Logical Operators
+        //Comparison Operators
         System.out.println(x>y);
         System.out.println(x==y);
         System.out.println(x!=y);
@@ -46,6 +51,10 @@ int x = 20;
 int y = 30;
 
 /*
+NOTE - THE FOLLOWING WILL NOT WORK, YOU CAN TRY IT THOUGH
+x = y;
+y = x;
+
 Some code here
 
 create a temp variable as below
@@ -112,7 +121,7 @@ variable = (condition) ? expressionTrue :  expressionFalse;
 
 ## Array Data type
 * [Array data types](https://www.w3schools.com/java/java_arrays.asp)
-* Exercise part of for loop.
+* Exercise below as part of for loop.
 
 ## for loop
 * [for loop](https://www.w3schools.com/java/java_for_loop.asp)
@@ -126,6 +135,21 @@ public class WeekFiveEx3 {
 
         for(int i = 0; i < numbers.length; i++) {
             System.out.println(numbers[i]);
+        }
+    }
+}
+```
+
+## while loop (if we have time.)
+* [while loop](https://www.w3schools.com/java/java_while_loop.asp)
+
+```
+public class WeekFiveEx4 {
+    public static void main(String args[]) {
+        int i = 0;
+        while(i < 10) {
+            System.out.println(i);
+            i++;
         }
     }
 }
@@ -167,7 +191,7 @@ for(int i = 0; i < numbers.length -1; i++) { //NOTE LOOK AT MY FINAL CONDITION n
     //if(number[i] > number[i+1]) {
         // print statement -> number at index is greater than number at index + 1 where i is : ......
         // your swap code here.
-        // look at in class exercise.
+        // look at in class exercise to swap numbers
     // }
    
 }
