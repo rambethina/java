@@ -45,7 +45,7 @@ public class WeekFiveEx1 {
 ```
 
 ## In Class Exercise
-Swap values of x & y and print results
+Swap values of x & y and print results (I would recommend creating a new java class for this.)
 ```
 int x = 20;
 int y = 30;
@@ -55,7 +55,7 @@ NOTE - THE FOLLOWING WILL NOT WORK, YOU CAN TRY IT THOUGH
 x = y;
 y = x;
 
-Some code here
+Psuedocode
 
 create a temp variable as below
 
@@ -118,6 +118,11 @@ Ternary operator
 variable = (condition) ? expressionTrue :  expressionFalse;
 ```
 
+Example
+```
+boolean isXGreaterThanY = (x > y) ? true : false;
+```
+
 
 ## Array Data type
 * [Array data types](https://www.w3schools.com/java/java_arrays.asp)
@@ -155,7 +160,7 @@ public class WeekFiveEx4 {
 }
 ```
 
-## Sort array so highest number is at the end of the array.
+## Assignment Sort array so highest number is at the end of the array.
 
 Input
 ```
