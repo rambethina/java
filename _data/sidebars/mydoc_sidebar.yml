@@ -35,6 +35,9 @@ entries:
     - title: Week Four
       url: /mydoc_week_four.html
       output: web, pdf
+    - title: Week Five
+      url: /mydoc_week_five.html
+      output: web, pdf
 
 
 
