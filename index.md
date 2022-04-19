@@ -12,7 +12,7 @@ summary: Summary of the course
 * [Week 2](https://rambethina.github.io/java/mydoc_week_two.html) - Deep dive into Hello World program, Variables.
 * [Week 3](https://rambethina.github.io/java/mydoc_week_three.html) - String API, Methods
 * [Week 4](https://rambethina.github.io/java/mydoc_week_four.html) - Methods Revisited, String API
-* Week 5 - If statements, Logical operators, while loop
+* [Week 5](https://rambethina.github.io/java/mydoc_week_five.html) - If statements, Logical operators, loops
 * Week 6 - For loops, Arrays
 * Week 7 - OOP, Classes
 * Week 8 - Classes revisited, Exercises.

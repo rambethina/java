@@ -11,6 +11,34 @@ folder: mydoc
 * [Arithmetic Operators](https://www.w3schools.com/java/java_operators.asp)
 * [Java Comparison Operators](https://www.w3schools.com/java/java_operators.asp)
 
+```
+public class WeekFiveEx1 {
+    public static void main(String args[]) {
+
+        //Assignment operators
+        int x = 2;
+        int y = 1;
+        int sum = x + y;
+        int multiplication = x * y;
+        int division = x / y;
+        int modulus = x % y;
+        System.out.println("Sum :"+sum);
+        System.out.println("Multiplication :"+multiplication);
+        System.out.println("Division :"+division);
+        System.out.println("Modulus :"+modulus);
+//        System.out.println(x++);
+//        System.out.println(++x);
+//        System.out.println(x);
+
+        //Logical Operators
+        System.out.println(x>y);
+        System.out.println(x==y);
+        System.out.println(x!=y);
+        System.out.println(x<y);
+    }
+}
+```
+
 ## In Class Exercise
 Swap values of x & y and print results
 ```
@@ -52,6 +80,20 @@ if (condition) {
 ```
 
 ```
+public class WeekFiveEx2 {
+    public static void main(String args[]) {
+
+        int x = 2;
+        int y = 1;
+
+        if(x > y) {
+            System.out.println("x is greater than y");
+        }
+    }
+}
+```
+
+```
 if (condition) {
   // block of code to be executed if the condition is true
 } else {
@@ -59,26 +101,33 @@ if (condition) {
 }
 ```
 
+In class exercise
+Use WeekFiveEx2 as a starting point and add the else clause above to `print y is greater than x`
+
 Ternary operator
 ```
 variable = (condition) ? expressionTrue :  expressionFalse;
 ```
 
+
 ## Array Data type
 * [Array data types](https://www.w3schools.com/java/java_arrays.asp)
-
-```
-int[] numbers = {42, 20, 1, 13};
-System.out.println(numbers[0]);
-```
+* Exercise part of for loop.
 
 ## for loop
 * [for loop](https://www.w3schools.com/java/java_for_loop.asp)
 * Print values in array
 ```
-int[] numbers = {42, 20, 1, 13};
-for(int i = 0; i < numbers.length; i++) {
-    System.out.println(number[i]);
+public class WeekFiveEx3 {
+    public static void main(String args[]) {
+
+        int[] numbers = {42, 20, 1, 13};
+        System.out.println(numbers[0]);
+
+        for(int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
+    }
 }
 ```
 
@@ -89,17 +138,37 @@ Input
 int[] numbers = {42, 20, 1, 13};
 ```
 
-Output must be
-```
-numbers = {20, 1, 13, 42};
+Iterate over your array after you implement step 1 & 2 and output must be
 ```
 
-STEP 1 - if number at index is greater than number at index + 1, print `number at index is greater than number at index + 1 where i is : ......
+Number at index 0: 20
+Number at index 1: 1
+Number at index 2: 13
+Number at index 3: 42
+```
+
+STEP 1  - if number at index or i is greater than number at index + 1 or i + 1, print `number at index is greater than number at index + 1 where i is : ......
 
 Sample code
 ```
 int[] numbers = {42, 20, 1, 13};
-for(int i = 0; i < numbers.length; i++) {
-    //if(number[i] > number[i+1])
+for(int i = 0; i < numbers.length -1; i++) { //NOTE LOOK AT MY FINAL CONDITION numbers.length -1
+    //if(number[i] > number[i+1]) {
+        // print statement -> number at index is greater than number at index + 1 where i is : ......
+    // }
+   
+}
+```
+STEP 2 - if number at index or i is greater than number at index + 1 or i + 1 then swap elements at index or i and index + 1 or i +1.
+Sample code
+```
+int[] numbers = {42, 20, 1, 13};
+for(int i = 0; i < numbers.length -1; i++) { //NOTE LOOK AT MY FINAL CONDITION numbers.length -1
+    //if(number[i] > number[i+1]) {
+        // print statement -> number at index is greater than number at index + 1 where i is : ......
+        // your swap code here.
+        // look at in class exercise.
+    // }
+   
 }
 ```
