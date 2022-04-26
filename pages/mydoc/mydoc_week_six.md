@@ -11,6 +11,36 @@ folder: mydoc
 
 Exercise will be added after we go over assignment in class.
 
+```
+public class WeekFiveAssignment {
+    public static void main(String args[]) {
+
+        int[] numbers = {42, 20, 1, 13};
+
+        // 1, 13, 20, 42
+
+        // i = 0; i < 4, i++
+
+        for(int j =0; j < numbers.length ; j++) {
+            for (int i = 0; i < numbers.length-1; i++) {
+                if(numbers[i] > numbers[i+1]) {
+                    int temp = numbers[i];
+                    numbers[i] = numbers[i+1];
+                    numbers[i+1] = temp;
+                }
+            }
+        }
+
+
+        for (int i= 0; i < numbers.length; i++) {
+            System.out.println("value of i is: "+i+ " and number at that position is: "+numbers[i]);
+        }
+
+
+    }
+}
+```
+
 ## while
 * [while](https://www.w3schools.com/java/java_while_loop.asp)
 
