@@ -93,12 +93,37 @@ public class WeekSixExFour {
 
 You will use all the concepts you learned from week 1-5
 
+Note: Your implementations does not need to take my suggestions into account. Look at suggestions only if you need an idea on what functions/methods you need to create. You can put all your code in main method but I would like you to think how to break apart your program into small functions/methods that you can reuse.
+
 Output formatter.
 
 * Output should be surrounded by *
 * Key Value pairs should be properly spaced.
 
-Example
+Sample input
+```
+public class Week6MidTerm {
+    public static void main(String args[]) {
+
+        String[] keysArray = {"First Name", "Last Name", "Primary Phone"};
+        String[] valuesArray = {"John", "Doe", "111-111-1111"};
+
+        // Your Implementation
+    }
+}
+```
+
+Example output
+```
+******************************
+* First Name   : John        *
+* Last Name    : Doe         *
+* Primary Phone: 111-111-1111*
+******************************
+```
+
+OR
+
 ```
 ************************************
 * First Name      : John           *
@@ -116,17 +141,17 @@ Requirements
 
 Suggestions
 
-* create a print method that takes in 2 arrays(keys array & values array) and prints the output.
+* create a print method that takes in 2 arrays(keys array & values array) and prints the output. This method should be called in main method
 ```
 public static void output(String[] keysArray, String[] valuesArray){
   /*
   pseudo code
-  int maxKeySize = getSizeOfBiggestStringInArray(keysArray);
+  int maxKeySize = getSizeOfBiggestStringInArray(keysArray); //Look below for method definition.
   int maxValuesSize = getSizeOfBiggestStringInArray(valuesArray);
 
   To print top border use System.out.print instead of System.out.print, you can use a while loop or for loop. - I would recommend creating a function called printBorder, look at while loop exercise.
 
-  Print each row, Use a for loop. I would recommend creating a function to print, look below at printRow
+  Print each row, Use a for loop. I would recommend creating a function to print, look below at printRow - I provided a complete implementation.
 
   Print bottom border.
   */
@@ -137,7 +162,7 @@ public static void output(String[] keysArray, String[] valuesArray){
 
 ```
 public static int getSizeOfBiggestStringInArray(String[] inputArray){
-
+// your implementation here.
 }
 ```
 
