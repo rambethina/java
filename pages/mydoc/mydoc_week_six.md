@@ -72,7 +72,8 @@ public class WeekSixExThree {
 
 ## break
 
-* [switch case]https://www.w3schools.com/java/java_while_loop.asp
+* [break](https://www.w3schools.com/java/java_break.asp)
+
 
 ```
 public class WeekSixExFour {
@@ -96,13 +97,13 @@ Output formatter.
 2) Key Value pairs should be properly spaced.
 
 Example
-
+```
 ************************************
 * First Name      : John           *
 * Last Name       : Doe            *
 * Primary Phone   : 111-111-1111   *
 ************************************
-
+```
 Requirements
 
 * Users should be able to pass in 2 string arrays, 
