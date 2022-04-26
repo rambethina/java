@@ -43,7 +43,7 @@ NOTE :- you will be using the following function in your assignment.
 
 ```
 public static void printBorder(int size) {
-
+   // your implementation here
 }
 ```
 
@@ -89,12 +89,14 @@ public class WeekSixExFour {
 }
 ```
 
-## Assignment
+## Assignment / Mid term project
+
+You will use all the concepts you learned from week 1-5
 
 Output formatter.
 
-1) Output should be surrounded by *
-2) Key Value pairs should be properly spaced.
+* Output should be surrounded by *
+* Key Value pairs should be properly spaced.
 
 Example
 ```
