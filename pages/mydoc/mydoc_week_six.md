@@ -61,7 +61,7 @@ public class WeekSixExTwo {
 Exercise
 
 STEP 1: 
-Create a program that prints the following, 
+Create a program that prints the following using a while loop, initialize the value of i to be number of * you want to print.
 
 `****************`
 
@@ -200,9 +200,13 @@ public static int getSizeOfBiggestStringInArray(String[] inputArray){
 
 ```
     public static void printRow(String key, String value, int maxKeySize, int maxValueSize){
-        // %-30s - format that add spaces to the end of string.
-        // %-30s - format that add spaces to the beginning of string.
-        // Reference - https://www.javatpoint.com/java-string-format
+        // Reference - https://www.javatpoint.com/java-string-format 
+        // Out of the box method that formats strings.
+        // Since you may not be familiar with using format method I provided a sample implementation.
+        // This is not the only implementation, but you can use this as a sample.
+        // %30s - format that add 30 spaces to the beginning of string.
+        // %-30s - format that add 30 spaces to the end of string.
+  
         String keyOutput = String.format("%-" + maxKeySize + "s", key);
         String valueOutput = String.format("%-" + maxValueSize + "s", value);
 
