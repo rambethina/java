@@ -33,9 +33,9 @@ Exercise
 STEP 1: 
 Create a program that prints the following, 
 
-HINT: instead of `System.out.println` use `System.out.print`
-
 `****************`
+
+HINT: instead of `System.out.println` use `System.out.print`
 
 STEP 2: 
 Put the print logic in a function/method instead and call function in your main method. 
@@ -79,10 +79,10 @@ public class WeekSixExFour {
 
     public static void main(String args[]) {
         for (int i = 0; i < 10; i++) {
-        if (i == 4) {
-            break;
-        }
-        System.out.println(i);
+            if (i == 4) {
+                break;
+            }
+            System.out.println(i);
         }
     }
 }
@@ -123,7 +123,7 @@ public static void output(String[] keysArray, String[] valuesArray){
 
   To print top border use System.out.print instead of System.out.print, you can use a while loop or for loop. - I would recommend creating a function called printBorder, look at while loop exercise.
 
-  Print each row, Use a for loop. I would recommend creating a function to print, look below at outputRow
+  Print each row, Use a for loop. I would recommend creating a function to print, look below at printRow
 
   Print bottom border.
   */
@@ -138,10 +138,16 @@ public static int getSizeOfBiggestStringInArray(String[] inputArray){
 }
 ```
 
-* Create a method to print a Row
+* Create a method to print a Row (Complete implemetation below, You dont need to change anything below.)
 
 ```
-public static void outputRow(String key, String value, int keySpacer, int valueSpacer){
+    public static void printRow(String key, String value, int maxKeySize, int maxValueSize){
+        // %-30s - format that add spaces to the end of string.
+        // %-30s - format that add spaces to the beginning of string.
+        // Reference - https://www.javatpoint.com/java-string-format
+        String keyOutput = String.format("%-" + maxKeySize + "s", key);
+        String valueOutput = String.format("%-" + maxValueSize + "s", value);
 
-}
+        System.out.println("*"+keyOutput+":"+valueOutput+"*");
+    }
 ```
