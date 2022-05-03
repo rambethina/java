@@ -11,8 +11,6 @@ folder: mydoc
 
 Exercise will be added after we go over assignment in class.
 
-<<<<<<< HEAD
-=======
 ```
 public class WeekFiveAssignment {
     public static void main(String args[]) {
@@ -43,7 +41,6 @@ public class WeekFiveAssignment {
 }
 ```
 
->>>>>>> e0ee76773c00de3fe7bedf2e365193903a6a7c16
 ## while
 * [while](https://www.w3schools.com/java/java_while_loop.asp)
 
@@ -64,21 +61,12 @@ public class WeekSixExTwo {
 Exercise
 
 STEP 1: 
-<<<<<<< HEAD
-Create a program that prints the following, 
-
-HINT: instead of `System.out.println` use `System.out.print`
-
-`****************`
-
-=======
 Create a program that prints the following using a while loop, initialize the value of i to be number of * you want to print.
 
 `****************`
 
 HINT: instead of `System.out.println` use `System.out.print`
 
->>>>>>> e0ee76773c00de3fe7bedf2e365193903a6a7c16
 STEP 2: 
 Put the print logic in a function/method instead and call function in your main method. 
 NOTE :- you will be using the following function in your assignment.
@@ -114,45 +102,23 @@ public class WeekSixExThree {
 
 ## break
 
-<<<<<<< HEAD
-* [switch case]https://www.w3schools.com/java/java_while_loop.asp
-=======
 * [break](https://www.w3schools.com/java/java_break.asp)
 
->>>>>>> e0ee76773c00de3fe7bedf2e365193903a6a7c16
 
 ```
 public class WeekSixExFour {
 
     public static void main(String args[]) {
         for (int i = 0; i < 10; i++) {
-<<<<<<< HEAD
-        if (i == 4) {
-            break;
-        }
-        System.out.println(i);
-=======
             if (i == 4) {
                 break;
             }
             System.out.println(i);
->>>>>>> e0ee76773c00de3fe7bedf2e365193903a6a7c16
         }
     }
 }
 ```
 
-<<<<<<< HEAD
-## Assignment
-
-Output formatter.
-
-1) Output should be surrounded by *
-2) Key Value pairs should be properly spaced.
-
-Example
-
-=======
 ## Assignment / Mid term project
 
 You will use all the concepts you learned from week 1-5
@@ -189,17 +155,12 @@ Example output
 OR
 
 ```
->>>>>>> e0ee76773c00de3fe7bedf2e365193903a6a7c16
 ************************************
 * First Name      : John           *
 * Last Name       : Doe            *
 * Primary Phone   : 111-111-1111   *
 ************************************
-<<<<<<< HEAD
-
-=======
 ```
->>>>>>> e0ee76773c00de3fe7bedf2e365193903a6a7c16
 Requirements
 
 * Users should be able to pass in 2 string arrays, 
@@ -210,29 +171,17 @@ Requirements
 
 Suggestions
 
-<<<<<<< HEAD
-* create a print method that takes in 2 arrays(keys array & values array) and prints the output.
-=======
 * create a print method that takes in 2 arrays(keys array & values array) and prints the output. This method should be called in main method
->>>>>>> e0ee76773c00de3fe7bedf2e365193903a6a7c16
 ```
 public static void output(String[] keysArray, String[] valuesArray){
   /*
   pseudo code
-<<<<<<< HEAD
-  int maxKeySize = getSizeOfBiggestStringInArray(keysArray);
-=======
   int maxKeySize = getSizeOfBiggestStringInArray(keysArray); //Look below for method definition.
->>>>>>> e0ee76773c00de3fe7bedf2e365193903a6a7c16
   int maxValuesSize = getSizeOfBiggestStringInArray(valuesArray);
 
   To print top border use System.out.print instead of System.out.print, you can use a while loop or for loop. - I would recommend creating a function called printBorder, look at while loop exercise.
 
-<<<<<<< HEAD
-  Print each row, Use a for loop. I would recommend creating a function to print, look below at outputRow
-=======
   Print each row, Use a for loop. I would recommend creating a function to print, look below at printRow - I provided a complete implementation.
->>>>>>> e0ee76773c00de3fe7bedf2e365193903a6a7c16
 
   Print bottom border.
   */
@@ -243,18 +192,6 @@ public static void output(String[] keysArray, String[] valuesArray){
 
 ```
 public static int getSizeOfBiggestStringInArray(String[] inputArray){
-<<<<<<< HEAD
-
-}
-```
-
-* Create a method to print a Row
-
-```
-public static void outputRow(String key, String value, int keySpacer, int valueSpacer){
-
-}
-=======
 // your implementation here.
 }
 ```
@@ -275,5 +212,4 @@ public static void outputRow(String key, String value, int keySpacer, int valueS
 
         System.out.println("*"+keyOutput+":"+valueOutput+"*");
     }
->>>>>>> e0ee76773c00de3fe7bedf2e365193903a6a7c16
 ```
