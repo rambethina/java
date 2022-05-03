@@ -14,7 +14,7 @@ summary: Summary of the course
 * [Week 4](https://rambethina.github.io/java/mydoc_week_four.html) - Methods Revisited, String API
 * [Week 5](https://rambethina.github.io/java/mydoc_week_five.html) - If statements, Logical operators, loops
 * [Week 6](https://rambethina.github.io/java/mydoc_week_six.html) - For loops, Arrays
-* Week 7 - OOP, Classes
+* [Week 7](https://rambethina.github.io/java/mydoc_week_seven.html) - OOP, Classes
 * Week 8 - Classes revisited, Exercises.
 * Week 9 - Inheritance, Abstraction, Polymorphism, Project discussion
 * Week 10 - Data structures, Exceptions, Project discussion
