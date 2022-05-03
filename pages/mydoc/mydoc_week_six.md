@@ -11,6 +11,39 @@ folder: mydoc
 
 Exercise will be added after we go over assignment in class.
 
+<<<<<<< HEAD
+=======
+```
+public class WeekFiveAssignment {
+    public static void main(String args[]) {
+
+        int[] numbers = {42, 20, 1, 13};
+
+        // 1, 13, 20, 42
+
+        // i = 0; i < 4, i++
+
+        for(int j =0; j < numbers.length ; j++) {
+            for (int i = 0; i < numbers.length-1; i++) {
+                if(numbers[i] > numbers[i+1]) {
+                    int temp = numbers[i];
+                    numbers[i] = numbers[i+1];
+                    numbers[i+1] = temp;
+                }
+            }
+        }
+
+
+        for (int i= 0; i < numbers.length; i++) {
+            System.out.println("value of i is: "+i+ " and number at that position is: "+numbers[i]);
+        }
+
+
+    }
+}
+```
+
+>>>>>>> e0ee76773c00de3fe7bedf2e365193903a6a7c16
 ## while
 * [while](https://www.w3schools.com/java/java_while_loop.asp)
 
@@ -31,19 +64,28 @@ public class WeekSixExTwo {
 Exercise
 
 STEP 1: 
+<<<<<<< HEAD
 Create a program that prints the following, 
 
 HINT: instead of `System.out.println` use `System.out.print`
 
 `****************`
 
+=======
+Create a program that prints the following using a while loop, initialize the value of i to be number of * you want to print.
+
+`****************`
+
+HINT: instead of `System.out.println` use `System.out.print`
+
+>>>>>>> e0ee76773c00de3fe7bedf2e365193903a6a7c16
 STEP 2: 
 Put the print logic in a function/method instead and call function in your main method. 
 NOTE :- you will be using the following function in your assignment.
 
 ```
 public static void printBorder(int size) {
-
+   // your implementation here
 }
 ```
 
@@ -72,22 +114,35 @@ public class WeekSixExThree {
 
 ## break
 
+<<<<<<< HEAD
 * [switch case]https://www.w3schools.com/java/java_while_loop.asp
+=======
+* [break](https://www.w3schools.com/java/java_break.asp)
+
+>>>>>>> e0ee76773c00de3fe7bedf2e365193903a6a7c16
 
 ```
 public class WeekSixExFour {
 
     public static void main(String args[]) {
         for (int i = 0; i < 10; i++) {
+<<<<<<< HEAD
         if (i == 4) {
             break;
         }
         System.out.println(i);
+=======
+            if (i == 4) {
+                break;
+            }
+            System.out.println(i);
+>>>>>>> e0ee76773c00de3fe7bedf2e365193903a6a7c16
         }
     }
 }
 ```
 
+<<<<<<< HEAD
 ## Assignment
 
 Output formatter.
@@ -97,12 +152,54 @@ Output formatter.
 
 Example
 
+=======
+## Assignment / Mid term project
+
+You will use all the concepts you learned from week 1-5
+
+Note: Your implementations does not need to take my suggestions into account. Look at suggestions only if you need an idea on what functions/methods you need to create. You can put all your code in main method but I would like you to think how to break apart your program into small functions/methods that you can reuse.
+
+Output formatter.
+
+* Output should be surrounded by *
+* Key Value pairs should be properly spaced.
+
+Sample input
+```
+public class Week6MidTerm {
+    public static void main(String args[]) {
+
+        String[] keysArray = {"First Name", "Last Name", "Primary Phone"};
+        String[] valuesArray = {"John", "Doe", "111-111-1111"};
+
+        // Your Implementation
+    }
+}
+```
+
+Example output
+```
+******************************
+* First Name   : John        *
+* Last Name    : Doe         *
+* Primary Phone: 111-111-1111*
+******************************
+```
+
+OR
+
+```
+>>>>>>> e0ee76773c00de3fe7bedf2e365193903a6a7c16
 ************************************
 * First Name      : John           *
 * Last Name       : Doe            *
 * Primary Phone   : 111-111-1111   *
 ************************************
+<<<<<<< HEAD
 
+=======
+```
+>>>>>>> e0ee76773c00de3fe7bedf2e365193903a6a7c16
 Requirements
 
 * Users should be able to pass in 2 string arrays, 
@@ -113,17 +210,29 @@ Requirements
 
 Suggestions
 
+<<<<<<< HEAD
 * create a print method that takes in 2 arrays(keys array & values array) and prints the output.
+=======
+* create a print method that takes in 2 arrays(keys array & values array) and prints the output. This method should be called in main method
+>>>>>>> e0ee76773c00de3fe7bedf2e365193903a6a7c16
 ```
 public static void output(String[] keysArray, String[] valuesArray){
   /*
   pseudo code
+<<<<<<< HEAD
   int maxKeySize = getSizeOfBiggestStringInArray(keysArray);
+=======
+  int maxKeySize = getSizeOfBiggestStringInArray(keysArray); //Look below for method definition.
+>>>>>>> e0ee76773c00de3fe7bedf2e365193903a6a7c16
   int maxValuesSize = getSizeOfBiggestStringInArray(valuesArray);
 
   To print top border use System.out.print instead of System.out.print, you can use a while loop or for loop. - I would recommend creating a function called printBorder, look at while loop exercise.
 
+<<<<<<< HEAD
   Print each row, Use a for loop. I would recommend creating a function to print, look below at outputRow
+=======
+  Print each row, Use a for loop. I would recommend creating a function to print, look below at printRow - I provided a complete implementation.
+>>>>>>> e0ee76773c00de3fe7bedf2e365193903a6a7c16
 
   Print bottom border.
   */
@@ -134,6 +243,7 @@ public static void output(String[] keysArray, String[] valuesArray){
 
 ```
 public static int getSizeOfBiggestStringInArray(String[] inputArray){
+<<<<<<< HEAD
 
 }
 ```
@@ -144,4 +254,26 @@ public static int getSizeOfBiggestStringInArray(String[] inputArray){
 public static void outputRow(String key, String value, int keySpacer, int valueSpacer){
 
 }
+=======
+// your implementation here.
+}
+```
+
+* Create a method to print a Row (Complete implemetation below, You dont need to change anything below.)
+
+```
+    public static void printRow(String key, String value, int maxKeySize, int maxValueSize){
+        // Reference - https://www.javatpoint.com/java-string-format 
+        // Out of the box method that formats strings.
+        // Since you may not be familiar with using format method I provided a sample implementation.
+        // This is not the only implementation, but you can use this as a sample.
+        // %30s - format that add 30 spaces to the beginning of string.
+        // %-30s - format that add 30 spaces to the end of string.
+  
+        String keyOutput = String.format("%-" + maxKeySize + "s", key);
+        String valueOutput = String.format("%-" + maxValueSize + "s", value);
+
+        System.out.println("*"+keyOutput+":"+valueOutput+"*");
+    }
+>>>>>>> e0ee76773c00de3fe7bedf2e365193903a6a7c16
 ```
