@@ -166,8 +166,6 @@ public class Dog {
 ```
 
 Note the following will result in a compilation error
-
-```
 ```
 public class WeekSevenEx2 {
 
@@ -180,17 +178,18 @@ public class WeekSevenEx2 {
 
 }
 ```
-```
-
 ## static key word
+Static variables are class variables, Their value is the same irrespective of the Object
+
 Exercise
 * Implement Circle class
 * Suggested instance variables for your class `int radius`
 * Implement area methods
+
 ```
 Area of circle can be calculated as 
 
-double area = radius * radius * Math.PI; // notice how we are using PI from Math class, Since its an instance variable
+double area = radius * radius * Math.PI; // notice how we are using PI from Math class, Since its a static variable
 ```
 
 
