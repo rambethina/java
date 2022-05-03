@@ -75,12 +75,15 @@ Create Object in main method, I am creating another class that has a main method
 
 ```
 public class WeekSevenEx1 {
-    Dog dogOne = new Dog();
-    dogOne.name = "Grady";
-    dogOne.breed = "Pug"
-    dogOne.traits = {"friendly", "naughty"};
+    public static void main(String args[]) {
+        Dog dogOne = new Dog();
+        dogOne.name = "Grady";
+        dogOne.breed = "Pug"
+        dogOne.traits = {"friendly", "naughty"};
 
-    dogOne.printDetails();
+        dogOne.printDetails();
+    }
+
 }
 ```
 
@@ -96,11 +99,101 @@ public class WeekSevenEx1 {
 ## Class constructor
 * [Constructor](https://www.w3schools.com/java/java_constructors.asp)
 
+```
+public class Dog {
+    public String name;
+    public String breed;
+    public String[] traits;
+
+    //Constructor
+    public Dog(String name, String breed, String[] traits) {
+        this.name = name;
+        this.breed = breed;
+        this.traits = traits;
+    }
+
+    public void printDetails() {
+        System.out.println("Name of dog is :"+name);
+        System.out.println("Name of breed is :"+breed);
+        System.out.println("The following are traits of this dog");
+        for(int i = 0; i < traits.length; i++) {
+            System.out.println(traits[i])
+        }
+    }
+}
+```
+
+```
+public class WeekSevenEx2 {
+
+    public static void main(String args[]) {
+        Dog dogOne = new Dog("Grady", "Pug", {"friendly", "naughty"});
+
+        dogOne.printDetails();
+    }
+
+}
+```
+
+## In Class Exercise (Continuation of Exercise One)
+* Create a constructor for the Book class you created
+* Modify you main, Use the newly created constructor to intialize your instance variables. 
 ## Access modifiers
 * [access modifiers](https://www.w3schools.com/java/java_modifiers.asp)
 
+```
+public class Dog {
+    String name;
+    String breed;
+    String[] traits;
+
+    //Constructor
+    public Dog(String name, String breed, String[] traits) {
+        this.name = name;
+        this.breed = breed;
+        this.traits = traits;
+    }
+
+    public void printDetails() {
+        System.out.println("Name of dog is :"+name);
+        System.out.println("Name of breed is :"+breed);
+        System.out.println("The following are traits of this dog");
+        for(int i = 0; i < traits.length; i++) {
+            System.out.println(traits[i])
+        }
+    }
+}
+```
+
+Note the following will result in a compilation error
+
+```
+```
+public class WeekSevenEx2 {
+
+    public static void main(String args[]) {
+        Dog dogOne = new Dog("Grady", "Pug", {"friendly", "naughty"});
+
+        System.out.println(dogOne.name); // should result in a compilation error since name is a private variable
+        dogOne.printDetails();
+    }
+
+}
+```
+```
+
 ## static key word
+Exercise
+* Implement Circle class
+* Suggested instance variables for your class `int radius`
+* Implement area methods
+```
+Area of circle can be calculated as 
+
+double area = radius * radius * Math.PI; // notice how we are using PI from Math class, Since its an instance variable
+```
+
 
 ## Assignment
-* [Create a github account if you have not doen already](https://github.com/www.wikihow.com/Create-an-Account-on-GitHub)
+* [Create a github account if you have not done so](https://github.com/www.wikihow.com/Create-an-Account-on-GitHub)
 * [Git integration with IntelliJ](https://www.youtube.com/watch?v=mf2-MOl0VXY)
