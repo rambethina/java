@@ -48,6 +48,9 @@ As an example you can look at [amazon](https://www.amazon.com/gp/browse.html?rw_
 
 You can click on each book to identify attributes of a book.
 
+## Optional in class exercise
+Given an array
+
 ## Create an object of a class
 
 Example
@@ -82,6 +85,13 @@ public class WeekSevenEx1 {
         dogOne.traits = new String[]{"friendly", "naughty"};
 
         dogOne.printDetails();
+
+        Dog dogTwo = new Dog();
+        dogTwo.name = "Comet";
+        dogTwo.breed = "Poodle";
+        dogTwo.traits = new String[]{"Playful", "lazy"};
+
+        dogTwo.printDetails();
     }
 
 }
