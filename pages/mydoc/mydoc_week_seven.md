@@ -65,7 +65,7 @@ public class Dog {
         System.out.println("Name of breed is :"+breed);
         System.out.println("The following are traits of this dog");
         for(int i = 0; i < traits.length; i++) {
-            System.out.println(traits[i])
+            System.out.println(traits[i]);
         }
     }
 }
@@ -78,8 +78,8 @@ public class WeekSevenEx1 {
     public static void main(String args[]) {
         Dog dogOne = new Dog();
         dogOne.name = "Grady";
-        dogOne.breed = "Pug"
-        dogOne.traits = {"friendly", "naughty"};
+        dogOne.breed = "Pug";
+        dogOne.traits = new String[]{"friendly", "naughty"};
 
         dogOne.printDetails();
     }
@@ -117,7 +117,7 @@ public class Dog {
         System.out.println("Name of breed is :"+breed);
         System.out.println("The following are traits of this dog");
         for(int i = 0; i < traits.length; i++) {
-            System.out.println(traits[i])
+            System.out.println(traits[i]);
         }
     }
 }
@@ -127,9 +127,9 @@ public class Dog {
 public class WeekSevenEx2 {
 
     public static void main(String args[]) {
-        Dog dogOne = new Dog("Grady", "Pug", {"friendly", "naughty"});
+        Dog dogTwo = new Dog("Grady", "Pug", new String[]{"friendly", "naughty"});
 
-        dogOne.printDetails();
+        dogTwo.printDetails();
     }
 
 }
@@ -159,7 +159,7 @@ public class Dog {
         System.out.println("Name of breed is :"+breed);
         System.out.println("The following are traits of this dog");
         for(int i = 0; i < traits.length; i++) {
-            System.out.println(traits[i])
+            System.out.println(traits[i]);
         }
     }
 }
@@ -172,7 +172,7 @@ Note the following will result in a compilation error
 public class WeekSevenEx2 {
 
     public static void main(String args[]) {
-        Dog dogOne = new Dog("Grady", "Pug", {"friendly", "naughty"});
+        Dog dogOne = new Dog("Grady", "Pug",new String[]{"friendly", "naughty"});
 
         System.out.println(dogOne.name); // should result in a compilation error since name is a private variable
         dogOne.printDetails();
