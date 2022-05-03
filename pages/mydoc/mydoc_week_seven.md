@@ -5,10 +5,38 @@ permalink: mydoc_week_seven.html
 folder: mydoc
 ---
 
-## Questions of Midterm assignment
-
+## Questions - Midterm assignment
+* [Midterm Assignment](https://rambethina.github.io/java/mydoc_week_six.html#assignment--mid-term-project)
+* Due Date: May 17, 2022
+* Submit a link to github project
 ## Introduction Class, Objects
 * [Class & Objects](https://www.w3schools.com/java/java_classes.asp)
+
+Couple of example
+
+```
+Dog
+
+Attributes:
+    - name
+    - breed
+    - traits (Array)
+
+Methods:
+    - printDetails
+```
+
+
+```
+Circle
+Attributes:
+    - radius
+
+Methods:
+    - calcuateArea
+    - calculateCircumference
+
+```
 
 ## In Class Exercise One
 
@@ -71,4 +99,8 @@ public class WeekSevenEx1 {
 ## Access modifiers
 * [access modifiers](https://www.w3schools.com/java/java_modifiers.asp)
 
+## static key word
 
+## Assignment
+* [Create a github account if you have not doen already](https://github.com/www.wikihow.com/Create-an-Account-on-GitHub)
+* [Git integration with IntelliJ](https://www.youtube.com/watch?v=mf2-MOl0VXY)
