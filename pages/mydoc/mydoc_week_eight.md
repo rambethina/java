@@ -96,7 +96,7 @@ public class WeekEightStarter {
 ## Break
 * Time for questions
 * Look at final project below, read the project documentation and think thru what classes you need, what instances variables you need per class and methods you need for each class.
-## Final project - Exercise
+## Final project (More details will be added later, This section is more of a helper to think through Object oriented programming)
 
 Goal: Based on following description figure out
 * List of classes, 
