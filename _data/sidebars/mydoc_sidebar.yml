@@ -44,6 +44,9 @@ entries:
     - title: Week Seven
       url: /mydoc_week_seven.html
       output: web, pdf
+    - title: Week Eight
+      url: /mydoc_week_eight.html
+      output: web, pdf
 
 
 
