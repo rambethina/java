@@ -5,7 +5,7 @@ permalink: mydoc_week_nine.html
 folder: mydoc
 ---
 
-## Introduction to data structures
+## Introduction to data structures & Iterator
 
 * Arrays
 * Map (We will review in the next lecture)
@@ -83,14 +83,14 @@ public class ArrayListSample {
 
 ## Programming an OOP system - Reference implementation
 
-* For our final project we will work on creating an eCommerce system. During this class we will implement one
+* For our final project we will work on creating an [eCommerce system](https://rambethina.github.io/java/mydoc_week_eight.html#final-project-more-details-will-be-added-later-this-section-is-more-of-a-helper-to-think-through-object-oriented-programming). During this class we will implement one
 module in our eCommerce Application.
 
 Inventory module should satisfy the following
 * Store items in our inventory. (In reference it is hardcoded in `com.inventory.Inventory`, initializeInventory() method, later you will read from a file instead. )
 * Display items in our inventory.
-* Total cost of our inventory.
-* Search based on ISBN Number.
+* Total cost of our inventory. (Sample provided for this function)
+* Search based on ISBN Number.(Inclass exercise)
 
 [Sample starter](https://github.com/rambethina/ECommerceInventoryModule)
 
@@ -140,7 +140,7 @@ public class ReadFile {
 }
 ```
 
-## In Class Exercise
+## In Class Exercise & Assignment for the week
 
 * Continue implementation of Inventory module.
 * Initialize inventory from a file instead(ie remove hard coded values.)
