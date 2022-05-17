@@ -51,6 +51,8 @@ public class Book {
 ```
 
 ```
+import java.util.Arrays;
+
 public class ArrayListSample {
 
     public static void main(String[] args) {
@@ -89,3 +91,50 @@ Inventory module should satisfy the following
 * Display items in our inventory.
 * Total cost of our inventory.
 * Search based on ISBN Number.
+
+[Sample starter](https://github.com/rambethina/ECommerceInventoryModule)
+
+Download project
+* Click on Code button (Green Button)
+* Download Zip
+
+* Create a new intelliJ project, Select download location and leave defaults.
+
+* Note usage of the following
+    * packages
+    * implementation of totalAmount in `com.inventory.Inventory`
+
+* Create a new search method in Inventory module.
+    * Take ISBN number as input and return true or false based on book being in inventory.
+        * Use totalAmount in `com.inventory.Inventory` as a reference.
+
+## Exceptions
+* [Exception handling](https://www.w3schools.com/java/java_try_catch.asp)
+
+## Working with files
+
+* [readings from files](https://www.w3schools.com/java/java_files_read.asp)
+
+```
+import java.io.File;  // Import the File class
+import java.io.FileNotFoundException;  // Import this class to handle errors
+import java.util.Scanner; // Import the Scanner class to read text files
+
+public class ReadFile {
+  public static void main(String[] args) {
+    try {
+      File myObj = new File("filename.txt");
+      Scanner myReader = new Scanner(myObj);
+      while (myReader.hasNextLine()) {
+        String data = myReader.nextLine();
+        System.out.println(data);
+      }
+      myReader.close();
+    } catch (FileNotFoundException e) {
+      System.out.println("An error occurred.");
+      e.printStackTrace();
+    }
+  }
+}
+```
+
