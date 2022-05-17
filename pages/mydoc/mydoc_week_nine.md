@@ -96,9 +96,10 @@ Inventory module should satisfy the following
 
 Download project
 * Click on Code button (Green Button)
-* Download Zip
+* Download Zip, Unzip contents and move to a location you normally place your project.
 
-* Create a new intelliJ project, Select download location and leave defaults.
+* Create a new intelliJ project, and select the location where you placed your project and leave defaults.
+* Make sure your project runs successfully by running ECommerceMain (Right click and run)
 
 * Note usage of the following
     * packages
