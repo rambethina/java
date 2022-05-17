@@ -81,13 +81,13 @@ public class ArrayListSample {
 * [Packages](https://www.w3schools.com/java/java_packages.asp)
 
 
-## Programming an OOP system
+## Programming an OOP system - Reference implementation
 
-* For our final project we will work on creating an eCommerce system. During this class will one
+* For our final project we will work on creating an eCommerce system. During this class we will implement one
 module in our eCommerce Application.
 
 Inventory module should satisfy the following
-* Store items in our inventory.
+* Store items in our inventory. (In reference it is hardcoded in `com.inventory.Inventory`, initializeInventory() method, later you will read from a file instead. )
 * Display items in our inventory.
 * Total cost of our inventory.
 * Search based on ISBN Number.
@@ -103,6 +103,8 @@ Download project
 * Note usage of the following
     * packages
     * implementation of totalAmount in `com.inventory.Inventory`
+
+## In Class Exercise
 
 * Create a new search method in Inventory module.
     * Take ISBN number as input and return true or false based on book being in inventory.
@@ -137,4 +139,14 @@ public class ReadFile {
   }
 }
 ```
+
+## In Class Exercise
+
+* Continue implementation of Inventory module.
+* Initialize inventory from a file instead(ie remove hard coded values.)
+* Create another constructor in your book class that takes a string.
+    * constructor should split string, You can assume that `,` is a seperator & order of string is defined as
+    * ISBN number,Title, Author,Category, Price
+    * Example `ISBN001,How to program in cPlusPlus,John Doe,Educational, 19.2`
+
 
