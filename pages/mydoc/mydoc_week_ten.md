@@ -37,7 +37,7 @@ public class MapSample {
 ```
 
 * Queue - First In First Out
-    * Example - Ticket queue
+    * Example - Reservation system
 
 ```
 import java.util.PriorityQueue;
@@ -164,3 +164,73 @@ public class Book extends Product{
 }
 ```
 
+## User Input
+* [User Input](https://www.w3schools.com/java/java_user_input.asp)
+
+```
+import java.util.Scanner;  // Import the Scanner class
+
+class Main {
+  public static void main(String[] args) {
+    Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+    System.out.println("Enter username");
+
+    String userName = myObj.nextLine();  // Read user input
+    System.out.println("Username is: " + userName);  // Output user input
+  }
+}
+```
+
+
+## FINAL PROJECT
+Let us build a simple eCommerce application similar to Amazon (But way simpler). Our eCommerce application has the following modules
+
+* Registration & Login (Optional)
+* Inventory (Mandatory)
+* Checkout (Mandatory)
+
+Our simple eCommerce should satisfy the following
+
+Registration & Login
+
+* User should be able to register. During registration they will provide the following
+    * email address
+    * password
+    * first name
+    * last name
+    * shipping address (line1, line2, city, state, country, postal code)
+    * mailing address (line1, line2, city, state, country, postal code)
+    * phone number
+* After registration sanitize user input before storing in our database.(for now we will store in a file)
+    * You can look at previous assignments. (Sanitization steps will be added later, but for now assume that you will have to sanitize input)
+* Our eCommerce application should allow multiple users to register.
+* Registered users should be able to login with their email address and password.
+
+Inventory
+* After logging users should be able to browse the list of books. We should display the list based on the inventory we have.
+* You can assume list of books in inventory will be provided in a flat file.(Sample file below) - [Read from a file](https://rambethina.github.io/java/mydoc_week_nine.html#working-with-files)
+* For each book users should see the following information
+    * ISBN number (unique identifier of a book)
+    * Title
+    * Cost
+    * Book Category. (Valid values being Educational, History, Travel, Cookings)
+    * Author.
+* Users should be able to choose a book and add it to their cart, remove it from their cart.
+* Users should be able to see total cost of their cart.
+* After a user checkouts, 
+    * inventory should be updated accordingly.
+    * Print a summary of User details
+    * Print cart details with total amount and shipping address.
+
+
+SAMPLE FLAT FILE
+ISBN001, How to program in cPlusPlus, 19.2, Educational, John Doe
+ISBN001, How to program in cPlusPlus, 19.2, Educational, John Doe
+ISBN002, How to program in Java, 22.6, Educational, Sally Smith
+ISBN003, Destinations of a life time, 6.99, Travel, James Madison
+ISBN004, Top 100 places to visit, 6.45, Travel, James Franklin
+ISBN005, French revolution, 12.33, History, Fances wade
+ISBN006, Civil war, 33.0, History, Davis Mark
+ISBN002, How to program in Java, 22.6, Educational, Sally Smith
+ISBN005, French revolution, 12.33, History, Fances wade
+ISBN003, Destinations of a life time, 6.99, Travel, James Madison
