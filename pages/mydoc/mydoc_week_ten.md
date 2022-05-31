@@ -5,6 +5,8 @@ permalink: mydoc_week_ten.html
 folder: mydoc
 ---
 
+## FTC From next week
+* We will be using a [simulator](https://github.com/Beta8397/virtual_robot), Please download before next class
 ## Continue from last week.
 * Exceptions
 * Files
@@ -181,13 +183,24 @@ class Main {
 }
 ```
 
+FTC
+
+* We will be using a [simulator](https://github.com/Beta8397/virtual_robot), Please download before next class
+
 
 ## FINAL PROJECT
+
+* Due July 05 2022
+* You will need to complete the project to be eligible for credits from Maryville university.
+* You can join office hours if you need help.
+
 Let us build a simple eCommerce application similar to Amazon (But way simpler). Our eCommerce application has the following modules
 
 * Registration & Login (Optional)
 * Inventory (Mandatory)
 * Checkout (Mandatory)
+
+You can use sample [Inventory module](https://github.com/rambethina/ECommerceInventoryModule) implementation as a starting point
 
 Our simple eCommerce should satisfy the following
 
