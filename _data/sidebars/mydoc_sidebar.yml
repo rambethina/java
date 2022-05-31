@@ -50,6 +50,9 @@ entries:
     - title: Week Nine
       url: /mydoc_week_nine.html
       output: web, pdf
+    - title: Week Ten
+      url: /mydoc_week_ten.html
+      output: web, pdf
 
 
 

@@ -17,7 +17,7 @@ summary: Summary of the course
 * [Week 7](https://rambethina.github.io/java/mydoc_week_seven.html) - OOP, Classes
 * [Week 8](https://rambethina.github.io/java/mydoc_week_eight.html) - Classes revisited, Exercises.
 * [Week 9](https://rambethina.github.io/java/mydoc_week_nine.html) - Data structures introduction, Packages, imports, Sample OOP implementation.
-* Week 10 - Data structures, Exceptions, Project discussion
+* [Week 10](https://rambethina.github.io/java/mydoc_week_ten.html) - Data structures, Exceptions, Project discussion
 * Week 11 - FTC Introduction, Op Modes, Working with motors
 * Week 12 - Encoders, Servo, Distance Sensor
 * Week 13 - Road Runner (Drive to a location, uses encoders internally, pid controller / feedforward control, Odometry / Localization)
