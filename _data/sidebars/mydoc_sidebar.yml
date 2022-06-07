@@ -53,6 +53,9 @@ entries:
     - title: Week Ten
       url: /mydoc_week_ten.html
       output: web, pdf
+    - title: Week Eleven
+      url: /mydoc_week_eleven.html
+      output: web, pdf
 
 
 
