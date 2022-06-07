@@ -190,21 +190,39 @@ FTC
 
 ## FINAL PROJECT
 
-* Due July 05 2022
+* Due July 05 2022 (If you need more time let me know.)
 * You will need to complete the project to be eligible for credits from Maryville university.
 * You can join office hours if you need help.
 
 Let us build a simple eCommerce application similar to Amazon (But way simpler). Our eCommerce application has the following modules
 
-* Registration & Login (Optional)
+
 * Inventory (Mandatory)
 * Checkout (Mandatory)
+* Registration & Login (Optional)
 
-You can use sample [Inventory module](https://github.com/rambethina/ECommerceInventoryModule) implementation as a starting point
+You can use sample [Starter project](https://github.com/rambethina/ECommerceFinalStarter), Look at README.md for more instructions, For simplicity I divided the projects into 5 parts. Parts 1-3 are mandatory and 4, 5 are optional.
 
 Our simple eCommerce should satisfy the following
 
-Registration & Login
+Inventory
+* Users should be able to browse the list of books. We should display the list based on the inventory we have.
+* You can assume list of books in inventory will be provided in a flat file.(Sample file below) - [Read from a file](https://rambethina.github.io/java/mydoc_week_nine.html#working-with-files)
+* For each book users should see the following information
+    * ISBN number (unique identifier of a book)
+    * Title
+    * Cost
+    * Book Category. (Valid values being Educational, History, Travel, Cookings)
+    * Author.
+* Users should be able to choose a book and add it to their cart, remove it from their cart.
+* Users should be able to see total cost of their cart.
+* After a user checkouts, 
+    * inventory should be updated accordingly.
+    * Print cart details with total amount and shipping address.
+
+
+
+Registration & Login (OPTIONAL)
 
 * User should be able to register. During registration they will provide the following
     * email address
@@ -218,23 +236,6 @@ Registration & Login
     * You can look at previous assignments. (Sanitization steps will be added later, but for now assume that you will have to sanitize input)
 * Our eCommerce application should allow multiple users to register.
 * Registered users should be able to login with their email address and password.
-
-Inventory
-* After logging users should be able to browse the list of books. We should display the list based on the inventory we have.
-* You can assume list of books in inventory will be provided in a flat file.(Sample file below) - [Read from a file](https://rambethina.github.io/java/mydoc_week_nine.html#working-with-files)
-* For each book users should see the following information
-    * ISBN number (unique identifier of a book)
-    * Title
-    * Cost
-    * Book Category. (Valid values being Educational, History, Travel, Cookings)
-    * Author.
-* Users should be able to choose a book and add it to their cart, remove it from their cart.
-* Users should be able to see total cost of their cart.
-* After a user checkouts, 
-    * inventory should be updated accordingly.
-    * Print a summary of User details
-    * Print cart details with total amount and shipping address.
-
 
 SAMPLE FLAT FILE
 ISBN NUMBER, TITLE, PRICE, BOOK CATEGORY, AUTHOR
