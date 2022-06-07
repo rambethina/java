@@ -111,7 +111,8 @@ public enum StateMachineStates {
     * You call loop method.
 * Regular
     * Predefined loop method is called regularly.
-    * Event based programming.
+    * Event based programming. [State machines are based on Event based programming., I think threads need to be used in addtiona to event based programming](https://gm0.org/en/latest/docs/software/finite-state-machines.html)
+
 
 ## Simple example using linear OpMode
 * Get used to initializations
