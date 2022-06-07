@@ -91,8 +91,9 @@ public enum StateMachineStates {
 * We will be using a [simulator](https://github.com/Beta8397/virtual_robot), 
 * Unzip/UnCompress and open in intelliJ
 * Make one change to the following file
+
 ```
-<PROJECT dir="">/Controllers/src/virtual_robot/src/config/Config.java
+<PROJECT_DIR>/Controllers/src/virtual_robot/src/config/Config.java
 ```
 
 ```
