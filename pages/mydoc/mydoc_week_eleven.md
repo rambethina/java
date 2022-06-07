@@ -111,7 +111,7 @@ public enum StateMachineStates {
     * You call loop method.
 * Regular
     * Predefined loop method is called regularly.
-    * Event based programming. (State machine)
+    * Event based programming.
 
 ## Simple example using linear OpMode
 * Get used to initializations
@@ -208,7 +208,7 @@ public class TwoWheelRegularOpMode extends OpMode {
 }
 ```
 
-## State Machine starter
+## Event based program
 
 ```
 package org.firstinspires.ftc.teamcode;
