@@ -5,7 +5,10 @@ permalink: mydoc_week_eleven.html
 folder: mydoc
 ---
 
+## Final project
+* [Final Project](https://rambethina.github.io/java/mydoc_week_ten.html#final-project)
 ## Refresher Interface
+* [Refresher](https://rambethina.github.io/java/mydoc_week_ten.html#interface)
 
 ## Abstract class
 ```
@@ -90,6 +93,7 @@ public enum StateMachineStates {
 ## Simulator
 * We will be using a [simulator](https://github.com/Beta8397/virtual_robot), 
 * Unzip/UnCompress and open in intelliJ
+* File open and choose folder
 * Make one change to the following file
 
 ```
@@ -102,6 +106,74 @@ public enum StateMachineStates {
 
 ## OpModes
 
+* Linear
+    * Sequential programming.
+    * You call loop method.
+* Regular
+    * Predefined loop method is called regularly.
+    * Event based programming. (State machine)
+
+## Simple example using linear OpMode
+* Get used to initializations
+
+```
+package org.firstinspires.ftc.teamcode;
+
+import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.hardware.DcMotor;
+
+@Autonomous(name="One", group = "LinearOpMode")
+public class TwoWheelLinearOpMode extends LinearOpMode {
+
+    DcMotor leftMotor;
+    DcMotor rightMotor;
+    @Override
+    public void runOpMode() throws InterruptedException {
+
+        leftMotor = hardwareMap.dcMotor.get("left_motor");
+        rightMotor = hardwareMap.dcMotor.get("right_motor");
+        leftMotor.setDirection(DcMotor.Direction.REVERSE);
+        waitForStart();
+
+        leftMotor.setPower(.25);
+        rightMotor.setPower(.25);
+
+        sleep(2000);
+    }
+}
+```
+
+## Linar OpModes example with while loop
+```
+package org.firstinspires.ftc.teamcode;
+
+import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.hardware.DcMotor;
+
+@Autonomous(name="One", group = "LinearOpMode")
+public class TwoWheelLinearOpMode extends LinearOpMode {
+
+    DcMotor leftMotor;
+    DcMotor rightMotor;
+    @Override
+    public void runOpMode() throws InterruptedException {
+
+        leftMotor = hardwareMap.dcMotor.get("left_motor");
+        rightMotor = hardwareMap.dcMotor.get("right_motor");
+        leftMotor.setDirection(DcMotor.Direction.REVERSE);
+        waitForStart();
+
+        while(opModeIsActive()){
+            System.out.println(getRuntime());
+            leftMotor.setPower(1);
+            rightMotor.setPower(1);
+        }
+    }
+}
+```
+## RegularOpMode
 * Regular
     * Predefined loop method is called regularly.
     * Event based programming. (State machine)
@@ -132,40 +204,6 @@ public class TwoWheelRegularOpMode extends OpMode {
         System.out.println(getRuntime());
         leftMotor.setPower(-1);
         rightMotor.setPower(-1);
-    }
-}
-```
-
-* Linear
-    * Sequential programming.
-    * You call loop method.
-
-
-```
-package org.firstinspires.ftc.teamcode;
-
-import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
-import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-import com.qualcomm.robotcore.hardware.DcMotor;
-
-@Autonomous(name="One", group = "LinearOpMode")
-public class TwoWheelLinearOpMode extends LinearOpMode {
-
-    DcMotor leftMotor;
-    DcMotor rightMotor;
-    @Override
-    public void runOpMode() throws InterruptedException {
-
-        leftMotor = hardwareMap.dcMotor.get("left_motor");
-        rightMotor = hardwareMap.dcMotor.get("right_motor");
-        leftMotor.setDirection(DcMotor.Direction.REVERSE);
-        waitForStart();
-
-        while(opModeIsActive()){
-            System.out.println(getRuntime());
-            leftMotor.setPower(1);
-            rightMotor.setPower(1);
-        }
     }
 }
 ```
