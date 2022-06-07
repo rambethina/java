@@ -237,6 +237,8 @@ Inventory
 
 
 SAMPLE FLAT FILE
+ISBN NUMBER, TITLE, PRICE, BOOK CATEGORY, AUTHOR
+```
 ISBN001, How to program in cPlusPlus, 19.2, Educational, John Doe
 ISBN001, How to program in cPlusPlus, 19.2, Educational, John Doe
 ISBN002, How to program in Java, 22.6, Educational, Sally Smith
@@ -247,3 +249,4 @@ ISBN006, Civil war, 33.0, History, Davis Mark
 ISBN002, How to program in Java, 22.6, Educational, Sally Smith
 ISBN005, French revolution, 12.33, History, Fances wade
 ISBN003, Destinations of a life time, 6.99, Travel, James Madison
+```
