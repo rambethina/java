@@ -1,5 +1,5 @@
 ---
-title: Week Eleven
+title: Week Twelve
 sidebar: mydoc_sidebar
 permalink: mydoc_week_twelve.html
 folder: mydoc
@@ -344,6 +344,11 @@ Goal - Troubleshoot an existing implementation & understand whats going on.
 
 * A star algorithm. (Path planning algorithm)
 * Road runner library.
+
+## Suggested reading
+* [Mechanum drive](https://gm0.org/en/latest/docs/software/mecanum-drive.html)
+* https://www.ctrlaltftc.com/practical-examples/drivetrain-control
+
 
 
 
