@@ -270,14 +270,14 @@ public class SampleLinearOpModeSquareMec extends LinearOpMode {
         back_left_motor.setPower(0.25);
         back_right_motor.setPower(0.25);
 
-        sleep(3000); // drive straight for 1 second.
+        sleep(3000); // drive straight for 3 second.
 
         front_left_motor.setPower(0.0);
         front_right_motor.setPower(0.0);
         back_left_motor.setPower(0);
         back_right_motor.setPower(0);
 
-        sleep(3000); // drive straight for 1 second.
+        sleep(3000); // drive straight for 3 second.
 
         front_left_motor.setPower(0.25);
         front_right_motor.setPower(-0.25);
@@ -291,7 +291,7 @@ public class SampleLinearOpModeSquareMec extends LinearOpMode {
         back_left_motor.setPower(0);
         back_right_motor.setPower(0);
 
-        sleep(3000); // drive straight for 1 second.
+        sleep(3000); // drive straight for 3 second.
 
         front_left_motor.setPower(-0.25);
         front_right_motor.setPower(-0.25);
@@ -306,7 +306,7 @@ public class SampleLinearOpModeSquareMec extends LinearOpMode {
         back_left_motor.setPower(0);
         back_right_motor.setPower(0);
 
-        sleep(3000); // drive straight for 1 second.
+        sleep(3000); // drive straight for 3 second.
 
         front_left_motor.setPower(-0.25);
         front_right_motor.setPower(0.25);
@@ -324,6 +324,18 @@ public class SampleLinearOpModeSquareMec extends LinearOpMode {
     }
 }
 ```
+
+## In class exercise
+Goal - Troubleshoot an existing implementation & understand whats going on.
+
+* Look at provided TestSixWheel and run Bot using ... Bot
+* You will get an error, try to identify the source of error and fix it.
+* Loot at code for distance and color Senor.
+
+## Next week
+
+* A star algorithm. (Path planning algorithm)
+* Road runner library.
 
 
 
