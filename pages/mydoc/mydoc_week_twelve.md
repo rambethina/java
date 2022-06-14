@@ -5,12 +5,14 @@ permalink: mydoc_week_twelve.html
 folder: mydoc
 ---
 
-# Plan
-* Discuss Encoders
-* Discuss some sensors
+## Plan
+* Discuss event based programming.
+* Discuss Encoders.
+* Discuss some sensors.
 * Next Week - Advanced (Final week ??, based on attendence I may make week 13 as final week.)
     * A star.
     * Road runner.
+
 ## Event based program
 * [Event based program](https://rambethina.github.io/java/mydoc_week_eleven.html#event-based-program)
 
