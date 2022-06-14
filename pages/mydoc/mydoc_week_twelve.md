@@ -8,7 +8,7 @@ folder: mydoc
 # Plan
 * Discuss Encoders
 * Discuss some sensors
-* Next Week - Advanced (Final week ??)
+* Next Week - Advanced (Final week ??, based on attendence I may make week 13 as final week.)
     * A star.
     * Road runner.
 ## Event based program
