@@ -5,6 +5,12 @@ permalink: mydoc_week_twelve.html
 folder: mydoc
 ---
 
+# Plan
+* Discuss Encoders
+* Discuss some sensors
+* Next Week - Advanced (Final week ??)
+    * A star.
+    * Road runner.
 ## Event based program
 * [Event based program](https://rambethina.github.io/java/mydoc_week_eleven.html#event-based-program)
 
@@ -93,7 +99,7 @@ public class TwoWheelRegModeSMSwithCase extends OpMode {
 
 
 ## Encoders
-Encoders are sensors that track “counts” or “ticks,” which are values that represent a certain amount of a rotation, Using encoders is a better way to measure distance than time, due to frcition etc.
+Encoders are sensors that track “counts” or “ticks,” which are values that represent a certain amount of a rotation, Using encoders is a better way to measure distance than time, due to friction etc.
 * [API](https://ftctechnh.github.io/ftc_app/doc/javadoc/com/qualcomm/robotcore/hardware/DcMotor.html)
 * [Modes](https://ftctechnh.github.io/ftc_app/doc/javadoc/com/qualcomm/robotcore/hardware/DcMotor.RunMode.html)
 
