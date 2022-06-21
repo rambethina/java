@@ -20,6 +20,6 @@ summary: Summary of the course
 * [Week 10](https://rambethina.github.io/java/mydoc_week_ten.html) - Data structures, Exceptions, Project discussion
 * [Week 11](https://rambethina.github.io/java/mydoc_week_eleven.html) - FTC Introduction, Op Modes, Working with motors
 * [Week 12](https://rambethina.github.io/java/mydoc_week_twelve.html) - Encoders, Servo, Distance Sensor
-* Week 13 - Road Runner (Drive to a location, uses encoders internally, pid controller / feedforward control, Odometry / Localization)
+* [Week 13](https://rambethina.github.io/java/mydoc_week_thirteen.html) - Road Runner (Drive to a location, uses encoders internally, pid controller / feedforward control, Odometry / Localization)
 * Week 14 - A * (Path planning algorithm)
 * Week 15 - Tensor Flow
