@@ -22,4 +22,4 @@ summary: Summary of the course
 * [Week 12](https://rambethina.github.io/java/mydoc_week_twelve.html) - Encoders, Servo, Distance Sensor
 * [Week 13](https://rambethina.github.io/java/mydoc_week_thirteen.html) - Refresher Static, Casting, Inheritance, Encoders, Servo, 
 * Week 14 - A * (Path planning algorithm), Road Runner (Drive to a location, uses encoders internally, pid controller / feedforward control, Odometry / Localization)
-* Week 15 - No Class
+* [Week 15]() - Optional - Questions about final project, Refresher on any topics based on questions.
