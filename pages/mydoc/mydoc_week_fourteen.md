@@ -354,6 +354,7 @@ public class AStarTest {
         int cols = 7;
         AStar aStar = new AStar(rows, cols, initialNode, finalNode);
         int [] [] blocksArray = new int [] [] { {1, 3}, {2, 3}, {3, 3} };
+        //int[][] blocksArray = new int[][]{ {0, 3}, {1, 3}, {2, 3}, {3, 3}, {4, 3}, {1, 2} };
         aStar.setBlocks(blocksArray);
         List<Node> path = aStar.findPath();
         for (Node node : path) {
