@@ -10,7 +10,7 @@ folder: mydoc
 * Provide start and end points
 * Provide blocks
 * Run program to find path.
-* <TODO> Add reference to A star program
+* [A star Reference](https://github.com/marcelo-s/A-Star-Java-Implementation)
 
 ```
 package com.ai;
