@@ -5,6 +5,10 @@ permalink: mydoc_week_fourteen.html
 folder: mydoc
 ---
 
+## Next week optional 
+* If you have any questions for [Final Project](https://rambethina.github.io/java/mydoc_week_ten.html#final-project) (if you need one or 2 addtional months slack me. There is no penalty, You can slack me if you have any questions or need additional office hours to complete final project)
+* Questions about any thing related to course (Basic Java, Classes or OOP, FTC)
+
 ## Path Algorithms
 * [Path finding algorithms](https://en.wikipedia.org/wiki/Pathfinding)
 * Provide start and end points
@@ -386,6 +390,7 @@ public class AStarTest {
     * Run program as a standalone program.
     * Go thru  API / Documentation, and try out different methods.
     * Incorporate into your Bot.
+
 ## Road Runner and A Star 
 * [Sample Project](https://github.com/rambethina/SampleFTC.git)
 * Download project, Run the following op modes
