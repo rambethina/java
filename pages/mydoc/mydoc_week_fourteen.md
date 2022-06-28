@@ -368,7 +368,7 @@ public class AStarTest {
 
 ## Road Runner
 * [Road Runner](https://learnroadrunner.com/)
-* Program your robot to navigate given a path.
+* Program your robot to navigate, given a path (As we saw above, one option to get a path)
 * IMPORTANT: GO THRU [DOCUMENTATION](https://learnroadrunner.com/quickstart-overview.html#high-level-overview) AND TUNE YOUR ROBOT
 * [Trajectory overview](https://learnroadrunner.com/trajectories.html#trajectories-overview)
 * RoadRunnerSampleExamples - Simple road runner examples
@@ -382,8 +382,11 @@ public class AStarTest {
 
 ## Adding additional libraries
 * Place your library in lib directory - similar to using gradle to download and add dependencies.
-
-## Road Runner and A Star
+* Similar to road runner/A star there are other libraries that can be used, Methodology
+    * Run program as a standalone program.
+    * Go thru  API / Documentation, and try out different methods.
+    * Incorporate into your Bot.
+## Road Runner and A Star 
 * [Sample Project](https://github.com/rambethina/SampleFTC.git)
 * Download project, Run the following op modes
-* RoadRunnerSampleTwo - Integration with Road Runner and A Star
+* RoadRunnerSampleTwo - Integration with Road Runner and A Star (ONLY A SAMPLE IMPLEMENTATION, REMEMBER TO TUNE YOUR ROBOT, READ ROAD RUNNER DOCUMENTATION)
