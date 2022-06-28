@@ -21,5 +21,5 @@ summary: Summary of the course
 * [Week 11](https://rambethina.github.io/java/mydoc_week_eleven.html) - FTC Introduction, Op Modes, Working with motors
 * [Week 12](https://rambethina.github.io/java/mydoc_week_twelve.html) - Encoders, Servo, Distance Sensor
 * [Week 13](https://rambethina.github.io/java/mydoc_week_thirteen.html) - Refresher Static, Casting, Inheritance, Encoders, Servo, 
-* Week 14 - A * (Path planning algorithm), Road Runner (Drive to a location, uses encoders internally, pid controller / feedforward control, Odometry / Localization)
+* [Week 14](https://rambethina.github.io/java/mydoc_week_fourteen.html) - A * (Path planning algorithm), Road Runner Examples (Library abstracts Drive to a location, uses encoders internally, pid controller / feedforward control, Odometry / Localization), Integration Road runner with A *
 * [Week 15]() - Optional - Questions about final project, Refresher on any topics based on questions.
