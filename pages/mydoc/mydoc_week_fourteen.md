@@ -11,24 +11,16 @@ folder: mydoc
 * Provide blocks
 * Run program to find path.
 
-```
-Example Input
-        Node initialNode = new Node(2, 1);
-        Node finalNode = new Node(2, 5);
-        int rows = 6;
-        int cols = 7;
-        AStar aStar = new AStar(rows, cols, initialNode, finalNode);
-        int[][] blocksArray = new int[][]{{1, 3}, {2, 3}, {3, 3}};
-        aStar.setBlocks(blocksArray);
-        List<Node> path = aStar.findPath();
-        for (Node node : path) {
-            System.out.println(node);
-        }
+## Road Runner
+* [Road Runner](https://learnroadrunner.com/)
+* Program your robot to navigate given a path.
+* [Trajectory overview](https://learnroadrunner.com/trajectories.html#trajectories-overview)
+* [Path continuity exception](https://learnroadrunner.com/trajectories.html#path-continuity-exception)
+* [Markers](https://learnroadrunner.com/markers.html#types-of-markers)
 
-Output:
-Node [row=2, col=1]
-Node [row=1, col=2]
-Node [row=0, col=3]
-Node [row=1, col=4]
-Node [row=2, col=5]
-```
+## Road Runner and A Star
+* [Sample Project](https://github.com/rambethina/SampleFTC.git)
+* Download project, Run the following op modes 
+* RoadRunnerSampleExamples - Simple road runner examples
+* RoadRunnerSampleTwo - Integration with Road Runner and A Star
+* RoadRunnerSampleMarkerOne - Using markers
