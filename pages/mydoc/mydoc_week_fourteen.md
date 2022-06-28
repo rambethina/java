@@ -369,12 +369,16 @@ public class AStarTest {
 * [Road Runner](https://learnroadrunner.com/)
 * Program your robot to navigate given a path.
 * [Trajectory overview](https://learnroadrunner.com/trajectories.html#trajectories-overview)
+* RoadRunnerSampleExamples - Simple road runner examples
+    * Basic Example - Simple example to understand road runner
+    * Path Continuity Error
+    * Multiple trajectories - How to overcome Path Continuity
+    * Example to explain chaining operators & spline
 * [Path continuity exception](https://learnroadrunner.com/trajectories.html#path-continuity-exception)
 * [Markers](https://learnroadrunner.com/markers.html#types-of-markers)
+    * RoadRunnerSampleMarkerOne - Using markers
 
 ## Road Runner and A Star
 * [Sample Project](https://github.com/rambethina/SampleFTC.git)
-* Download project, Run the following op modes 
-* RoadRunnerSampleExamples - Simple road runner examples
+* Download project, Run the following op modes
 * RoadRunnerSampleTwo - Integration with Road Runner and A Star
-* RoadRunnerSampleMarkerOne - Using markers
