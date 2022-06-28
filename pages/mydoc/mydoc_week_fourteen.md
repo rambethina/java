@@ -340,17 +340,29 @@ public class AStar {
 ```
 
 ```
-    Node initialNode = new Node(2, 1);
-    Node finalNode = new Node(2, 5);
-    int rows = 6;
-    int cols = 7;
-    AStar aStar = new AStar(rows, cols, initialNode, finalNode);
-    int[][] blocksArray = new int[][]{{1, 3}, {2, 3}, {3, 3}};
-    aStar.setBlocks(blocksArray);
-    List<Node> path = aStar.findPath();
-    for (Node node : path) {
-        System.out.println(node);
+package com.ai;
+
+import java.util.List;
+
+public class AStarTest {
+
+    public static void main(String args[]) {
+
+        Node initialNode = new Node(2, 1);
+        Node finalNode = new Node(2, 5);
+        int rows = 6;
+        int cols = 7;
+        AStar aStar = new AStar(rows, cols, initialNode, finalNode);
+        int[][] blocksArray = new int[][]{{1, 3}, {2, 3}, {3, 3}};
+//        int[][] blocksArray = new int[][]{{0, 3},{1, 3}, {2, 3}, {3, 3},{4, 3},{1, 2},};
+        aStar.setBlocks(blocksArray);
+        List<Node> path = aStar.findPath();
+        for (Node node : path) {
+            System.out.println(node);
+//            System.out.println("["+node.getRow()+":"+node.getCol()+"]");
+        }
     }
+}
 ```
 
 ## Road Runner
