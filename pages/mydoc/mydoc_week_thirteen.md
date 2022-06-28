@@ -144,7 +144,7 @@ Also notice casting in
 ## Game pad controls & Servo
 * [Game pad controls & Servo](https://rambethina.github.io/java/mydoc_week_twelve.html#game-pad-controls--servo)
 
-## Inclass exercise
+## In class exercise
 * [Drive in a square](https://rambethina.github.io/java/mydoc_week_twelve.html#in-class-exercises)
 * [Solution](https://rambethina.github.io/java/mydoc_week_twelve.html#in-class-exercises)
 * [Run exercise and figure out the problem](https://rambethina.github.io/java/mydoc_week_twelve.html#in-class-exercise-1)
