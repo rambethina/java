@@ -62,6 +62,9 @@ entries:
     - title: Week Thirteen
       url: /mydoc_week_thirteen.html
       output: web, pdf
+    - title: Week fourteen
+      url: /mydoc_week_fourteen.html
+      output: web, pdf      
 
 
 
