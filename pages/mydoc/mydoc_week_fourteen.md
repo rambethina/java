@@ -10,6 +10,7 @@ folder: mydoc
 * Provide start and end points
 * Provide blocks
 * Run program to find path.
+* <TODO> Add reference to A star program
 
 ```
 package com.ai;
@@ -368,6 +369,7 @@ public class AStarTest {
 ## Road Runner
 * [Road Runner](https://learnroadrunner.com/)
 * Program your robot to navigate given a path.
+* IMPORTANT: GO THRU [DOCUMENTATION](https://learnroadrunner.com/quickstart-overview.html#high-level-overview) AND TUNE YOUR ROBOT
 * [Trajectory overview](https://learnroadrunner.com/trajectories.html#trajectories-overview)
 * RoadRunnerSampleExamples - Simple road runner examples
     * Basic Example - Simple example to understand road runner
@@ -377,6 +379,9 @@ public class AStarTest {
 * [Path continuity exception](https://learnroadrunner.com/trajectories.html#path-continuity-exception)
 * [Markers](https://learnroadrunner.com/markers.html#types-of-markers)
     * RoadRunnerSampleMarkerOne - Using markers
+
+## Adding additional libraries
+* Place your library in lib directory - similar to using gradle to download and add dependencies.
 
 ## Road Runner and A Star
 * [Sample Project](https://github.com/rambethina/SampleFTC.git)
