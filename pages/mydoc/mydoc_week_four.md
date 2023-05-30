@@ -120,9 +120,9 @@ cars[0] = "Opel";
 System.out.println(cars[0]);
 ```
 
-
 ## Assignment
-Goals - Use methods where possible.
+
+Goals - Use methods, and ***reuse*** methods where possible (avoid code duplication)
 
 Continuation of Validate & Sanitize Input. We will build on assignment from previous week and course work today.
 
