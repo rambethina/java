@@ -106,9 +106,10 @@ public class WeekFourExThree {
 ```
 
 ## In Class Exercise 3 (Methods with arguments & return a value)
-Expand on assignment from last week or what we covered in class.
-As part of the assignment we santized first name, as a next step sanitize last name too.
-Use method & avoid code duplication.
+
+Create a method that calculates area of a square. The method should take length as an input parameter and return area (return integer value.)
+
+Call area method within your main main method passing any integer. Print value returned from your method.
 
 ## [Array data type](https://www.w3schools.com/java/java_arrays.asp)
 
