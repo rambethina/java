@@ -89,6 +89,22 @@ Output should be
 ## Methods Continued
 * Methods with arguments and return type
 
+```
+public class WeekFourExThree {
+
+    public static void main(String args[]) {
+        String stringOne = format("Java facts.");
+        String stringTwo = format("In Java everything must be defined within a class.");
+        System.out.println(stringOne);
+        System.out.println(stringTwo);
+    }
+
+    public static String format(String inputParameter){
+        return "* " + inputParameter;
+    }
+}
+```
+
 ## In Class Exercise 3 (Methods with arguments & return a value)
 Expand on assignment from last week or what we covered in class.
 As part of the assignment we santized first name, as a next step sanitize last name too.
