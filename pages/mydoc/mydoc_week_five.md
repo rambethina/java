@@ -145,6 +145,29 @@ public class WeekFiveEx3 {
 }
 ```
 
+In class exercise
+
+Find the first index of a word in a sentence.
+
+Example one:
+
+Assume my sentence is: "The Constitutional Convention in Philadelphia met between May and September of 1787 to address the problems of the weak central government that existed under the Articles of Confederation."
+
+And I want to find the index of the word "Convention" or "convention", the answer should be 2.
+
+Example two:
+
+Assume my sentence is: "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal."
+
+And I want to find the index of the word "Liberty" or "liberty", the answer shoudl be 18.
+
+Mock code
+```
+split sentence into a string array. You can use the split method in string, it returns an ayrray of strings.
+loop thru the string array check value at each index againt word you are comparing. Use the .equals or .equalsIgnoreCase method to compare strings. Do not use == as it compares memory location and the not word itself.
+if word is found, that is the index of the word, you can print the index.
+```
+
 ## while loop (if we have time.)
 * [while loop](https://www.w3schools.com/java/java_while_loop.asp)
 
