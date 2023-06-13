@@ -8,9 +8,9 @@ folder: mydoc
 ## Sentence Exercise
 
 * Creating a new project may be better.
-* Create a new class called StaticSentenceExercise
-* Part One - Last weeks in class exericse, Find first index of word. (We will implement this as a refresher for last couple weeks content, we will refresh our topics on methods/functions, for loops etc.)
-* Part Two - Find last index of word. (Try implementing on your own, but if you need help look below in SentenceUtility class, lastOccurenceOfWord)
+* Create a new class called StaticSentenceExercise with your main method.
+* Part One - Last weeks in class exericse, Find first index of word. (We will implement this as a refresher for last couple weeks content, we will refresh our topics on methods/functions, for loops etc.). Also create this new method called firstOccurenceOfWord in a new class called SentenceUtility.
+* Part Two - Find last index of word. Create a new method called lastOccurenceOfWord in SentenceUtility class  (Try implementing on your own, but if you need help look below in SentenceUtility class, lastOccurenceOfWord)
 
 Your final implementation may look like
 
@@ -154,9 +154,37 @@ public class SentenceMain {
 
 ### In Class exercise
 
-Provide implementations for getLastIndexOfWord in Sentence class.
+Provide implementations for getLastIndexOfWord in Sentence class. Test your new method by calling it in main method.
 
 
 ### Observations
 
 * We create an object of a class using the ***new*** key word.
+* Looing at SentenceMain class main  method notice we are not passing sentence to getFirstIndexOfWord method. On which sentence are we getting the getFirstIndexOfWord?
+
+## Assignment
+
+Create a class called Circle with
+
+ * instance variable radius
+ * provide a constructor
+ * provide 2 methods with calculate area and circumference.
+
+Test your new class Circle created.
+
+```
+public class CircleMainTest {
+
+    public static void main(String[] args) {
+        Circle smallCircle = new Circle(5);
+
+        System.out.println("Area of small circle is :"+ smallCircle.area());
+        System.out.println("Circumference of small circle is :"+ smallCircle.circumference());
+
+        Circle bigCircle = new Circle(15);
+
+        System.out.println("Area of small circle is :"+ bigCircle.area());
+        System.out.println("Circumference of small circle is :"+ bigCircle.circumference());
+    }
+}
+```
