@@ -30,7 +30,8 @@ public class SentenceUtility {
 
     public static int lastOccurenceOfWord(String sentence, String word) {
 
-        String[] allWords = sentence.split(" ");
+        String[] allWords = sentence.replace(",", "")
+                .split(" ");
         for (int i = allWords.length - 1; i > 0; i--) {
             String currentWord = allWords[i];
             if (currentWord.equalsIgnoreCase(word)) {
@@ -71,6 +72,11 @@ public class StaticSentenceExercise {
     }
 }
 ```
+
+### Observations
+
+* Notice how a static method on another class is called. `ClassName.method` -> `SentenceUtility.firstOccurenceOfWord`
+
 
 ## Object Oriented Programming
 
@@ -154,4 +160,3 @@ Provide implementations for getLastIndexOfWord in Sentence class.
 ### Observations
 
 * We create an object of a class using the ***new*** key word.
-* Static - We use static for class methods.
