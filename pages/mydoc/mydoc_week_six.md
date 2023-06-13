@@ -9,11 +9,8 @@ folder: mydoc
 
 * Creating a new project may be better.
 * Create a new class called StaticSentenceExercise
-* Part One - Last weeks in class exericse, Find first index of word. (Try implementing on your own, but if you need help look below in SentenceUtility class, firstOccurenceOfWord)
+* Part One - Last weeks in class exericse, Find first index of word. (We will implement this as a refresher for last couple weeks content, we will refresh our topics on methods/functions, for loops etc.)
 * Part Two - Find last index of word. (Try implementing on your own, but if you need help look below in SentenceUtility class, lastOccurenceOfWord)
-* Part Three - Create methods if you have not done already.
-* Part Four -  Move to new class called SentenceUtility.
-
 
 Your final implementation may look like
 
@@ -100,18 +97,25 @@ A class can be thought of as a template ie our Sentence class in a template and 
 public class Sentence {
 
     private String sentenceString;
+    private String[] allWords;
 
     //Constructor
     //Special method which does not have a return type.
     //Initialize values of instance variables ie initialize value of sentenceString
     public Sentence(String sentenceInput) {
         this.sentenceString = sentenceInput;
+        allWords = this.sentenceString.split(" ");
     }
 
     //Functions/methods of sentence class, notice we do not need to pass sentence as an input argument
     public int getFirstIndexOfWord(String word){
-        //provide implementation
-        return 0;
+        for (int i = allWords.length - 1; i > 0; i--) {
+            String currentWord = allWords[i];
+            if (currentWord.equalsIgnoreCase(word)) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     //Functions/methods of sentence class, notice we do not need to pass sentence as an input argument
@@ -120,6 +124,7 @@ public class Sentence {
         return 0;
     }
 }
+
 ```
 
 ```
@@ -143,6 +148,10 @@ public class SentenceMain {
 
 ### In Class exercise
 
-Provide implementations for getFirstIndexOfWord & getLastIndexOfWord in Sentence class.
+Provide implementations for getLastIndexOfWord in Sentence class.
 
 
+### Observations
+
+* We create an object of a class using the ***new*** key word.
+* Static - We use static for class methods.
