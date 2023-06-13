@@ -168,7 +168,7 @@ Create a class called Circle with
 
  * instance variable radius
  * provide a constructor
- * provide 2 methods with calculate area and circumference.
+ * provide 2 methods which calculate area and circumference.
 
 Test your new class Circle created.
 
