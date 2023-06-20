@@ -46,8 +46,8 @@ Figure out the following (***Do not worry about implementation at this stage.***
  Let us assume we are going to read book details from a file, and each line in the file has details for ***a book and the fields are seperate by comma***. 
 
  ```text
-ISNB0001, How to program in Java, John Doe
-ISNB0002, How to program in JavaScript, Sally Smith
+ISNB0001, How to program in Java, John Doe, 21.2
+ISNB0002, How to program in JavaScript, Sally Smith, 19.2
 ```
 
 Let us also assume we can read a line from the file, which is details for a Book, Can you suggest changes to our existing implementation if we need to initialize a Book.
