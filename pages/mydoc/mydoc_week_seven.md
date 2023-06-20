@@ -55,9 +55,14 @@ Let us also assume we can read a line from the file, which is details for a Book
 ## Part Four
 
 Implement a new Book Constructor which takes a String, which is a comma separated list of book attributes.
-Use the new Constructor in your main class.
+Use the new Constructor in your main class. You can assume that order of fields in the comma separated string is fixed.
 
-## Part Five
+
+## Static variable
+
+This is a variable per Class, Not a variable per Object. A good example would be count of books.
+
+## Part Six
 
 Implement a Cart Class
 
