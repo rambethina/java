@@ -5,204 +5,64 @@ permalink: mydoc_week_seven.html
 folder: mydoc
 ---
 
-## Questions - Midterm assignment
-* [Midterm Assignment](https://rambethina.github.io/java/mydoc_week_six.html#assignment--mid-term-project)
-* Due Date: May 17, 2022
-* Submit a link to github project
-## Introduction Class, Objects
-* [Class & Objects](https://www.w3schools.com/java/java_classes.asp)
+# Object Oriented Programming
 
-Couple of example
+## Exercise Part One
 
-```
-Dog
+Your final project we will be developing an E-commerce application, but we tackle this in phases. For todays class we will look a small part of the E-commerce application.
 
-Attributes:
-    - name
-    - breed
-    - traits (Array)
+Let us assume we are selling ***Books*** in our E-commerce application. For a book we will store the following attributes.
 
-Methods:
-    - printDetails
-```
+* ISBN Number
+* Title
+* Author (assume it is only one author for now)
 
+We will also need a ***Cart*** module. During the checkout process we will ***add Books to our cart*** and we will want to
 
-```
-Circle
-Attributes:
-    - radius
+* Print out details of our cart.
+* We may also want to calculate the total number of books in our Cart.
+* And also we may want to calculate the total Amount/cost.
 
-Methods:
-    - calcuateArea
-    - calculateCircumference
+***Exercise***
 
-```
+Figure out the following (***Do not worry about implementation at this stage.***)
 
-## In Class Exercise One
+* Classes you need.
+* Instances variables for each class.
+* Functions/methods for each class.
 
-Assume we are going to build a eCommerce application that sells books.
+## Part Two
 
-Identify what attributes a book would contain.
+* Implement the Book Class
+  * Define instance variables.
+  * Provide a constructor - For now assume the input arguments to be ISBN Number, Title and Author
+  * Create a method to printBookDetails
+* Create a new class called - ECommerceStarter with a main method to test our Book class
+  * Create objects of the Book class.
+  * Call printBookDetails on objects to print details of the Book class.
 
-As an example you can look at [amazon](https://www.amazon.com/gp/browse.html?rw_useCurrentProtocol=1&node=8192263011&ref_=bhp_brws_100bks)
+## Part Three
 
-You can click on each book to identify attributes of a book.
+ Let us assume we are going to read book details from a file, and each line in the file has details for ***a book and the fields are seperate by comma***. 
 
-## Optional in class exercise
-Given an array
-
-## Create an object of a class
-
-Example
-
-Create Class
-
-```
-public class Dog {
-    public String name;
-    public String breed;
-    public String[] traits;
-
-    public void printDetails() {
-        System.out.println("Name of dog is :"+name);
-        System.out.println("Name of breed is :"+breed);
-        System.out.println("The following are traits of this dog");
-        for(int i = 0; i < traits.length; i++) {
-            System.out.println(traits[i]);
-        }
-    }
-}
+ ```text
+ISNB0001, How to program in Java, John Doe
+ISNB0002, How to program in JavaScript, Sally Smith
 ```
 
-Create Object in main method, I am creating another class that has a main method
+Let us also assume we can read a line from the file, which is details for a Book, Can you suggest changes to our existing implementation if we need to initialize a Book.
 
-```
-public class WeekSevenEx1 {
-    public static void main(String args[]) {
-        Dog dogOne = new Dog();
-        dogOne.name = "Grady";
-        dogOne.breed = "Pug";
-        dogOne.traits = new String[]{"friendly", "naughty"};
+## Part Four
 
-        dogOne.printDetails();
+Implement a new Book Constructor which takes a String, which is a comma separated list of book attributes.
+Use the new Constructor in your main class.
 
-        Dog dogTwo = new Dog();
-        dogTwo.name = "Comet";
-        dogTwo.breed = "Poodle";
-        dogTwo.traits = new String[]{"Playful", "lazy"};
+## Part Five
 
-        dogTwo.printDetails();
-    }
-
-}
-```
-
-## In Class Exercise (Continuation of Exercise One)
-
-* Create a Book class
-* Define attributes of the Book (From part one of the Exercise)
-* Create a print method that prints the values of attributes of the Book
-
-* Create another class that containts main method.
-* Create couple of Objects of Book class and print details of each book.
-
-## Class constructor
-* [Constructor](https://www.w3schools.com/java/java_constructors.asp)
-
-```
-public class Dog {
-    public String name;
-    public String breed;
-    public String[] traits;
-
-    //Constructor
-    public Dog(String name, String breed, String[] traits) {
-        this.name = name;
-        this.breed = breed;
-        this.traits = traits;
-    }
-
-    public void printDetails() {
-        System.out.println("Name of dog is :"+name);
-        System.out.println("Name of breed is :"+breed);
-        System.out.println("The following are traits of this dog");
-        for(int i = 0; i < traits.length; i++) {
-            System.out.println(traits[i]);
-        }
-    }
-}
-```
-
-```
-public class WeekSevenEx2 {
-
-    public static void main(String args[]) {
-        Dog dogTwo = new Dog("Grady", "Pug", new String[]{"friendly", "naughty"});
-
-        dogTwo.printDetails();
-    }
-
-}
-```
-
-## In Class Exercise (Continuation of Exercise One)
-* Create a constructor for the Book class you created
-* Modify you main, Use the newly created constructor to intialize your instance variables. 
-## Access modifiers
-* [access modifiers](https://www.w3schools.com/java/java_modifiers.asp)
-
-```
-public class Dog {
-    String name;
-    String breed;
-    String[] traits;
-
-    //Constructor
-    public Dog(String name, String breed, String[] traits) {
-        this.name = name;
-        this.breed = breed;
-        this.traits = traits;
-    }
-
-    public void printDetails() {
-        System.out.println("Name of dog is :"+name);
-        System.out.println("Name of breed is :"+breed);
-        System.out.println("The following are traits of this dog");
-        for(int i = 0; i < traits.length; i++) {
-            System.out.println(traits[i]);
-        }
-    }
-}
-```
-
-Note the following will result in a compilation error
-```
-public class WeekSevenEx2 {
-
-    public static void main(String args[]) {
-        Dog dogOne = new Dog("Grady", "Pug",new String[]{"friendly", "naughty"});
-
-        System.out.println(dogOne.name); // should result in a compilation error since name is a private variable
-        dogOne.printDetails();
-    }
-
-}
-```
-## static key word
-Static variables are class variables, Their value is the same irrespective of the Object
-
-Exercise
-* Implement Circle class
-* Suggested instance variables for your class `int radius`
-* Implement area methods
-
-```
-Area of circle can be calculated as 
-
-double area = radius * radius * Math.PI; // notice how we are using PI from Math class, Since its a static variable
-```
+Implement a Cart Class
 
 
-## Assignment
-* [Create a github account if you have not done so](https://github.com/www.wikihow.com/Create-an-Account-on-GitHub)
-* [Git integration with IntelliJ](https://www.youtube.com/watch?v=mf2-MOl0VXY)
+
+
+
+
