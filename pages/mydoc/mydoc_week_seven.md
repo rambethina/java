@@ -57,6 +57,52 @@ Let us also assume we can read a line from the file, which is details for a Book
 Implement a new Book Constructor which takes a String, which is a comma separated list of book attributes.
 Use the new Constructor in your main class. You can assume that order of fields in the comma separated string is fixed.
 
+```
+public class Book {
+
+    //Instance Variables
+    private String ISBN;
+    private String title;
+    private String author;
+    private double cost;
+
+    //Constructor - initialize instance variables
+    public Book(String isbnInput, String titleInput, String authorInput, double costInput) {
+        this.ISBN = isbnInput;
+        this.title = titleInput;
+        this.author = authorInput;
+        this.cost = costInput;
+    }
+
+    public Book(String commaSeperatedLine) {
+        //your implementation
+        // look at split method in String,
+        // initialize instance variable
+    }
+
+    public void printBookDetails() {
+        System.out.println("ISBN Number :"+ISBN + " title : "+title+ " author: "+ this.author+ " cost:"+cost);
+    }
+
+
+}
+
+```
+
+```
+public class ECommerceSimple {
+
+    public static void main(String[] args) {
+        Book javaBook = new Book("ISNB0001", "How to program in Java", "John Doe", 24.5);
+        javaBook.printBookDetails();
+
+        Book cPlusPlusBook = new Book("ISNB0002", "How to program in c Plus Plus", "Sally Smith", 19.9);
+        cPlusPlusBook.printBookDetails();
+
+       // Call your new constructor here
+    }
+}
+```
 
 ## Static variable
 
