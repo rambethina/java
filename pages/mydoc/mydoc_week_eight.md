@@ -100,6 +100,15 @@ public class ECommerceSimple {
 }
 ```
 
+## Packages
+
+[Packages](https://www.w3schools.com/java/java_packages.asp)
+
+Think of it as a way to organize your code. There are 2 parts 
+
+* Creating a package/folder and adding your class to new packages, adding package statement at the start of the file.
+* Import package when you need it.
+
 ## while loop
 
 * [while loop](https://www.w3schools.com/java/java_while_loop.asp)
@@ -119,13 +128,15 @@ public class WeekFiveEx4 {
 
 ## Data structures
 
-Data Structure in java is defined as the collection of data pieces that offers an effective means of storing and organising data in a computer. 
+Data Structure in java is defined as the collection of data pieces that offers an effective means of storing and organising data in a computer.
 
 For today lecture we will discuss Arrays. In the next weeks lecture will talk about Maps, Sets, Queues and Stacks.
 
 ## Array List & Iterator pattern
 
-Note: Look at import statements. We will cover this in more detail next week.
+* [Array List](https://www.w3schools.com/java/java_arraylist.asp)
+
+Note: Look at import statements.
 Note: We are using using type casting `String car = (String) carsIterator.next();`
 
 ```text
@@ -165,3 +176,43 @@ Do not implement yet, discuss
 *** Part Two ***
 
 Lets implement
+
+
+## Homework
+
+Lets begin implementation of the Cart class.
+
+* Provide instance variables. (Cart contains a list of books.)
+* Provide a constructor to instialize your instance variables.
+* Provide implementations for the following methods.
+  * Add book to Cart: This method takes a book as an input argument and adds it to the list.
+  * getTotal: This method iterates over the list gets each books cost, adds it up and returns total.
+
+* Change your main class ECommerceSimple to test your new Cart class. Sample Mock implementation below.
+
+```text
+public class ECommerceSimple {
+
+    public static void main(String[] args) {
+        Book javaBook = new Book("ISNB0001", "How to program in Java", "John Doe", 24.5);
+        javaBook.printBookDetails();
+
+        Book cPlusPlusBook = new Book("ISNB0002", "How to program in c Plus Plus", "Sally Smith", 19.9);
+        cPlusPlusBook.printBookDetails();
+
+        Book bookInitializedFromLine = new Book("ISNB0003, How to program in JavaScript, Adam, 21.2");
+
+        /*
+        Initialize cart object.
+
+        Cart myCart = new Cart();
+        myCart.addBook(javaBook);
+        myCart.addBook(cPlusPlusBook);
+        myCart.addBook(bookInitializedFromLine);
+
+        double cartTotal = myCart.getTotal();
+
+        System.out.println("Cart Total: " + cartTotal);
+        */
+    }
+}
