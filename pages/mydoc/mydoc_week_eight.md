@@ -190,6 +190,7 @@ Lets begin implementation of the Cart class.
 
 * Change your main class ECommerceSimple to test your new Cart class. Sample Mock implementation below.
 
+
 ```text
 public class ECommerceSimple {
 
@@ -215,4 +216,5 @@ public class ECommerceSimple {
         System.out.println("Cart Total: " + cartTotal);
         */
     }
-}```
+}
+```
