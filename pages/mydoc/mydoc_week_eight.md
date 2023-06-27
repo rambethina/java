@@ -16,6 +16,7 @@ Let us assume we are selling ***Books*** in our E-commerce application. For a bo
 * ISBN Number
 * Title
 * Author (assume it is only one author for now)
+* Cost
 
 We will also need a ***Cart*** module. During the checkout process we will ***add Books to our cart*** and we will want to
 
