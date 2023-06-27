@@ -41,7 +41,7 @@ A static varaible and static methods are variables & methods per class not per O
 
 [Static key word](https://www.w3schools.com/java/java_class_methods.asp)
 
-```
+```text
 public class Book {
 
     //Instance Variables
@@ -81,7 +81,7 @@ public class Book {
 }
 ```
 
-```
+```text
 public class ECommerceSimple {
 
     public static void main(String[] args) {
@@ -102,11 +102,66 @@ public class ECommerceSimple {
 
 ## while loop
 
+* [while loop](https://www.w3schools.com/java/java_while_loop.asp)
+
+```
+public class WeekFiveEx4 {
+    public static void main(String args[]) {
+        int i = 0;
+        while(i < 10) {
+            System.out.println(i);
+            i++;
+        }
+
+    }
+}
+```
+
 ## Data structures
 
-## Array List
+Data Structure in java is defined as the collection of data pieces that offers an effective means of storing and organising data in a computer. 
 
-## Iterator pattern
+For today lecture we will discuss Arrays. In the next weeks lecture will talk about Maps, Sets, Queues and Stacks.
 
-## InClass Exercise.
+## Array List & Iterator pattern
 
+Note: Look at import statements. We will cover this in more detail next week.
+Note: We are using using type casting `String car = (String) carsIterator.next();`
+
+```text
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class ArrayExample {
+
+    public static void main(String[] args) {
+        ArrayList carsArray = new ArrayList();
+        
+        carsArray.add("Tesla");
+        carsArray.add("Honda");
+        carsArray.add("BMW");
+
+        Iterator carsIterator = carsArray.iterator();
+        
+        while(carsIterator.hasNext()) {
+            String car = (String) carsIterator.next();
+            System.out.println(car);
+        }
+        
+    }
+}
+```
+
+## InClass Exercise
+
+Modify the exercise we have been working on.
+
+In the exercise so far we have assumed that we can have only one author. Modify your program so that it can take upto 10 authors.
+
+*** Part One ***
+
+Do not implement yet, discuss
+
+*** Part Two ***
+
+Lets implement
