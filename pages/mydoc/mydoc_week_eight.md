@@ -5,7 +5,7 @@ permalink: mydoc_week_eight.html
 folder: mydoc
 ---
 
-## OOP - Continued from laste week & Refresher
+## OOP - Continued from last week & Refresher
 
 -- Refresher - Project we were working on....
 
