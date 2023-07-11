@@ -302,5 +302,58 @@ public class WeekNineEnum {
 
 ## InClass Assignment
 
+We will begin with last weeks homework....
 
+Lets begin implementation of the Cart class.
 
+Provide instance variables. (Cart contains a list of books.)
+Provide a constructor to instialize your instance variables.
+Provide implementations for the following methods.
+Add book to Cart: This method takes a book as an input argument and adds it to the list.
+getTotal: This method iterates over the list gets each books cost, adds it up and returns total.
+Change your main class ECommerceSimple to test your new Cart class. Sample Mock implementation below.
+
+Sample Main class Implementation
+
+```java
+public class ECommerceSimple {
+
+    public static void main(String[] args) {
+        Book javaBook = new Book("ISNB0001", "How to program in Java", "John Doe", 24.5);
+        javaBook.printBookDetails();
+
+        Book cPlusPlusBook = new Book("ISNB0002", "How to program in c Plus Plus", "Sally Smith", 19.9);
+        cPlusPlusBook.printBookDetails();
+
+        Book bookInitializedFromLine = new Book("ISNB0003, How to program in JavaScript, Adam, 21.2");
+
+        /*
+        Initialize cart object.
+
+        Cart myCart = new Cart();
+        myCart.addBook(javaBook);
+        myCart.addBook(cPlusPlusBook);
+        myCart.addBook(bookInitializedFromLine);
+
+        double cartTotal = myCart.getTotal();
+
+        System.out.println("Cart Total: " + cartTotal);
+        */
+    }
+}
+```
+
+For in class exercise.
+
+Enhance our eCommerce application. Let us assume our we would also like to sell Computers. For each computer let us assume we would like to capture the following details
+
+* Serial Number - This is the unique identifier for a computer similar to ISBN Number for a book.
+* Brand - Examples Mac, Dell, HP
+* Cost
+
+Change your existing program to add computers to your cart.
+
+Couple of things you may want to do.
+
+* Create an interface or abstract class called Product and implement or extend `Product` so you can have a generic method in Cart called `addProduct`
+* In your Cart you may also want to have a list of products instead of a list of books or computers.
