@@ -110,6 +110,8 @@ public class InterfaceComplexMain {
 
 ## Abstract Class
 
+[Abstract class](https://www.w3schools.com/java/java_abstract.asp)
+
 ```java
 package asbstractsamples;
 
