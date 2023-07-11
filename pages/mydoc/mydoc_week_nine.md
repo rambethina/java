@@ -1,7 +1,7 @@
 ---
 title: Week Nine
 sidebar: mydoc_sidebar
-permalink: mydoc_week_nine_2022.html
+permalink: mydoc_week_nine.html
 folder: mydoc
 ---
 
