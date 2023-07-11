@@ -1,153 +1,306 @@
 ---
 title: Week Nine
 sidebar: mydoc_sidebar
-permalink: mydoc_week_nine.html
+permalink: mydoc_week_nine_2022.html
 folder: mydoc
 ---
 
-## Introduction to data structures & Iterator
+# Inheritance
 
-* Arrays
-* Map (We will review in the next lecture)
-* Queue (We will review in the next lecture)
-* Stack (We will review in the next lecture)
+## Interfaces
 
+```java
+package com.mynewclass;
+
+public interface Shape {
+    public double area();
+}
 ```
-import java.util.Arrays;
 
-public class Book {
+```java
+package com.mynewclass;
 
-    private final String isbnNumber;
-    private String title;
-    private String author;
-    private String category;
-    private double price;
-    private String[] reviews;
+public class Cirlce implements Shape{
 
-    public Book(String isbnNumber, String title, String author, String category, double price, String[] reviews) {
-        this.title = title;
-        this.isbnNumber = isbnNumber;
-        this.author = author;
-        this.category = category;
-        this.price = price;
-        this.reviews = reviews;
+    private double radius;
+    private static double PI = 3.14;
+
+    public Cirlce(double inputRadius) {
+        this.radius = inputRadius;
+    }
+
+    public double getArea(){
+        return PI*radius*radius;
     }
 
     @Override
-    public String toString() {
-        return "Book{" +
-                "title='" + title + '\'' +
-                ", author='" + author + '\'' +
-                ", category='" + category + '\'' +
-                ", price=" + price +
-                ", reviews=" + Arrays.toString(reviews) +
-                '}';
-    }
-
-    public double getPrice() {
-        return price;
+    public double area() {
+        return PI*radius*radius;
     }
 }
 ```
 
-```
-import java.util.Arrays;
+```java
+package com;
 
-public class ArrayListSample {
+import com.mynewclass.Cirlce;
+import com.mynewclass.Shape;
+
+public class InterfaceMain {
 
     public static void main(String[] args) {
-        List bookList = new ArrayList<Book>();
+        Shape smallCirle = new Cirlce(20.2);
+        System.out.println(smallCirle.area());
+    }
+}
 
-        bookList.add(
-                new Book("ISBN001", "How to program in java", "John Doe", "Educational", 29.2, new String[]{
-                        "first review for how to program in java"}));
-        bookList.add(
-                new Book("ISBN002", "How to program in cPlusPlus", "John Doe", "Educational", 19.2, new String[]{
-                        "first review"}));
-        bookList.add(
-                new Book("ISBN002", "How to program in cPlusPlus", "John Doe", "Educational", 19.2, new String[]{
-                        "first review"}));
+```
 
-        Iterator<Book> iterator = bookList.iterator();
-        while(iterator.hasNext()) {
-            Book book = iterator.next();
-            System.out.println(book.toString());
+
+Another example: Let us assume I am working on a raised bed garden and would like to calculate total area of my raised bed. Let us assume we have different shaped for individual beds.
+
+```java
+package com.mynewclass;
+
+public class Rectangle implements Shape{
+    
+    private double width;
+    private double height;
+    
+    public Rectangle(double width, double height) {
+        this.width = width;
+        this.height = height;
+    }
+    @Override
+    public double area() {
+        return width * height;
+    }
+}
+```
+
+```java
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class InterfaceComplexMain {
+
+    public static void main(String[] args) {
+        Shape smallCirle = new Cirlce(20.2);
+        Shape squareLotOne = new Rectangle(12.1, 23.1);
+
+        List lots = new ArrayList<Shape>();
+        double totalRaisedBedArea = 0.0;
+
+        lots.add(smallCirle);
+        lots.add(squareLotOne);
+
+        Iterator<Shape> lotsIterator = lots.iterator();
+        while (lotsIterator.hasNext()) {
+            totalRaisedBedArea += lotsIterator.next().area();
         }
+
+        System.out.println(totalRaisedBedArea);
+    }
+}
+
+```
+
+
+
+## Abstract Class
+
+```java
+package asbstractsamples;
+
+import java.util.*;
+
+public abstract class AbstractShape {
+
+
+    Comparator c = new Comparator<String>()
+    {
+        public int compare(String s1, String s2) {
+            return Integer.compare(s1.length(), s2.length());
+        }
+    };
+
+    public void prettyPrint(){
+        System.out.println("");
+        List<String> printDetails = getPrintLineItems();
+
+        ArrayList copy = new ArrayList (printDetails);
+
+        Collections.sort( printDetails, c);
+        int start = 0;
+
+        int maxSize = printDetails.get(printDetails.size()-1).length();
+
+        while(start < maxSize + 2) {
+            System.out.print("*");
+            start++;
+        }
+        System.out.println("");
+        Iterator iterator = copy.iterator();
+        while(iterator.hasNext()) {
+            System.out.println("*"+ iterator.next());
+        }
+
+        start = 0;
+
+        while(start < maxSize + 2) {
+            System.out.print("*");
+            start++;
+        }
+        System.out.println("");
+    }
+
+    public abstract double area();
+
+    public abstract List<String> getPrintLineItems();
+}
+```
+
+```java
+package asbstractsamples;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CircleImpl extends AbstractShape{
+
+    private double radius;
+    private static double PI = 3.14;
+
+    public CircleImpl(double radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    public double area() {
+        return PI * this.radius * this.radius;
+    }
+
+    @Override
+    public List<String> getPrintLineItems() {
+        List details = new ArrayList();
+        details.add("This is a circle");
+        details.add("Area is calculated by multiplying PI * radius * radius :");
+        details.add("The area is "+area());
+        return details;
     }
 }
 ```
 
-## Packages & Imports
-* [Packages](https://www.w3schools.com/java/java_packages.asp)
+```java
+package asbstractsamples;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class RectangleImpl extends AbstractShape{
+    private double width;
+    private double height;
 
 
-## Programming an OOP system - Reference implementation
-
-* For our final project we will work on creating an [eCommerce system](https://rambethina.github.io/java/mydoc_week_eight.html#final-project-more-details-will-be-added-later-this-section-is-more-of-a-helper-to-think-through-object-oriented-programming). During this class we will implement one
-module in our eCommerce Application.
-
-Inventory module should satisfy the following
-* Store items in our inventory. (In reference it is hardcoded in `com.inventory.Inventory`, initializeInventory() method, later you will read from a file instead. )
-* Display items in our inventory.
-* Total cost of our inventory. (Sample provided for this function)
-* Search based on ISBN Number.(Inclass exercise)
-
-[Sample starter](https://github.com/rambethina/ECommerceInventoryModule)
-
-Download project
-* Click on Code button (Green Button)
-* Download Zip, Unzip contents and move to a location you normally place your project.
-
-* Create a new intelliJ project, and select the location where you placed your project and leave defaults.
-* Make sure your project runs successfully by running ECommerceMain (Right click and run)
-
-* Note usage of the following
-    * packages
-    * implementation of totalAmount in `com.inventory.Inventory`
-
-## In Class Exercise
-
-* Create a new search method in Inventory module.
-    * Take ISBN number as input and return true or false based on book being in inventory.
-        * Use totalAmount in `com.inventory.Inventory` as a reference.
-
-## Exceptions
-* [Exception handling](https://www.w3schools.com/java/java_try_catch.asp)
-
-## Working with files
-
-* [readings from files](https://www.w3schools.com/java/java_files_read.asp)
-
-```
-import java.io.File;  // Import the File class
-import java.io.FileNotFoundException;  // Import this class to handle errors
-import java.util.Scanner; // Import the Scanner class to read text files
-
-public class ReadFile {
-  public static void main(String[] args) {
-    try {
-      File myObj = new File("filename.txt"); //replace with path to file
-      Scanner myReader = new Scanner(myObj);
-      while (myReader.hasNextLine()) {
-        String data = myReader.nextLine();
-        System.out.println(data);
-      }
-      myReader.close();
-    } catch (FileNotFoundException e) {
-      System.out.println("An error occurred.");
-      e.printStackTrace();
+    public RectangleImpl(double width, double height) {
+        this.width = width;
+        this.height = height;
     }
-  }
+
+    @Override
+    public double area() {
+        return width * height;
+    }
+
+    @Override
+    public List<String> getPrintLineItems() {
+        List details = new ArrayList();
+        details.add("This is
+        
+         a rectangle");
+        details.add("Area is calculated by multiplying lenght * height");
+        details.add("The area is "+area());
+        return details;
+    }
 }
 ```
 
-## In Class Exercise & Assignment for the week
+```java
+package asbstractsamples;
 
-* Continue implementation of Inventory module.
-* Initialize inventory from a file instead(ie remove hard coded values.)
-* Create another constructor in your book class that takes a string.
-    * constructor should split string, You can assume that `,` is a seperator & order of string is defined as
-    * ISBN number,Title, Author,Category, Price
-    * Example `ISBN001,How to program in cPlusPlus,John Doe,Educational, 19.2`
+public class AbstractMain {
+
+    public static void main(String[] args) {
+        AbstractShape rect = new RectangleImpl(20, 30);
+        rect.prettyPrint();
+
+
+        AbstractShape circle = new CircleImpl(32);
+        circle.prettyPrint();
+    }
+}
+```
+
+Output
+
+```text
+
+***************************************************
+*This is a rectangle
+*Area is calculated by multiplying lenght * height
+*The area is 600.0
+***************************************************
+
+**********************************************************
+*This is a circle
+*Area is calculated by multiplying PI * radius * radius :
+*The area is 3215.36
+**********************************************************
+```
+
+## Enums
+
+* Refer [w3schools](https://www.w3schools.com/java/java_enums.asp)
+
+```java
+public enum DogBreeds {
+    PUG,
+    POODLE
+}
+```
+
+```java
+public class Dog {
+    public String name;
+    public DogBreeds breed;
+
+    public Dog(String name, DogBreeds dogBreed) {
+        this.name = name;
+        this.breed = dogBreed;
+    }
+
+    public void printDogDetails() {
+        System.out.println("Name of dog is :"+name);
+        System.out.println("Breed of dog is :"+breed);
+    }
+}
+```
+
+```java
+public class WeekNineEnum {
+
+    public static void main(String[] args) {
+
+        Dog myDog = new Dog("Grady", DogBreeds.PUG);
+        myDog.printDogDetails();
+
+    }
+}
+```
+
+
+## InClass Assignment
+
 
 
