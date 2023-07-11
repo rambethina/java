@@ -7,7 +7,11 @@ folder: mydoc
 
 # Inheritance
 
+[Inheritance](https://www.w3schools.com/java/java_inheritance.asp)
+
 ## Interfaces
+
+[Interfaces](https://www.w3schools.com/java/java_interface.asp)
 
 ```java
 package com.mynewclass;
