@@ -5,11 +5,16 @@ permalink: mydoc_week_ten_2022.html
 folder: mydoc
 ---
 
-## Data structures
+## FTC From next week
+* We will be using a [simulator](https://github.com/Beta8397/virtual_robot), Please download before next class
+## Continue from last week.
+* Exceptions
+* Files
 
+## Data structures
 * Map
 
-```java
+```
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -34,9 +39,9 @@ public class MapSample {
 ```
 
 * Queue - First In First Out
-  * Example - Reservation system
+    * Example - Reservation system
 
-```java
+```
 import java.util.PriorityQueue;
 
 public class QueueSample {
@@ -57,11 +62,9 @@ public class QueueSample {
 ```
 
 * Stack - First in last out
-  * Example - browser back button
-
+    * Example - browser back button
 import java.util.Stack;
 
-```java
 public class StackSample {
 
     public static void main(String[] args) {
@@ -75,54 +78,98 @@ public class StackSample {
         System.out.println(stack.pop());
     }
 }
+
+## Interface
+
 ```
-
-## Enums
-
-* Refer [w3schools](https://www.w3schools.com/java/java_enums.asp)
-
-```java
-public enum DogBreeds {
-    PUG,
-    POODLE
+public interface Shape {
+    public double area();
 }
+
 ```
 
-```java
-public class Dog {
-    public String name;
-    public DogBreeds breed;
+```
+public class Square implements Shape{
+    private int length;
 
-    public Dog(String name, DogBreeds dogBreed) {
-        this.name = name;
-        this.breed = dogBreed;
+    public Square(int length) {
+        this.length = length;
     }
 
-    public void printDogDetails() {
-        System.out.println("Name of dog is :"+name);
-        System.out.println("Breed of dog is :"+breed);
+    @Override
+    public double area() {
+        return length*length;
     }
 }
 ```
 
-```java
-public class WeekNineEnum {
 
-    public static void main(String[] args) {
+## Abstract class
 
-        Dog myDog = new Dog("Grady", DogBreeds.PUG);
-        myDog.printDogDetails();
+```
+public abstract class Product {
 
+    double price;
+
+    public Product(double price) {
+        this.price = price;
     }
+
+    public abstract void printDetails();
 }
 ```
 
+```
+import java.util.Arrays;
+
+public class Book extends Product{
+
+    private final String isbnNumber;
+    private String title;
+    private String author;
+    private String category;
+//    private double price;
+    private String[] reviews;
+
+    public Book(String isbnNumber, String title, String author, String category, double price, String[] reviews) {
+        super(price);
+        this.title = title;
+        this.isbnNumber = isbnNumber;
+        this.author = author;
+        this.category = category;
+//        this.price = price;
+        this.reviews = reviews;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", category='" + category + '\'' +
+                ", price=" + price +
+                ", reviews=" + Arrays.toString(reviews) +
+                '}';
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    @Override
+    public void printDetails() {
+        System.out.println(" ** Product details **");
+
+        System.out.println("Title :"+title);
+        System.out.println("Price :"+price);
+    }
+}
+```
 
 ## User Input
-
 * [User Input](https://www.w3schools.com/java/java_user_input.asp)
 
-```java
+```
 import java.util.Scanner;  // Import the Scanner class
 
 class Main {
@@ -136,8 +183,7 @@ class Main {
 }
 ```
 
-
-## FTC Simulator if you need it
+FTC
 
 * We will be using a [simulator](https://github.com/Beta8397/virtual_robot), Please download before next class
 
