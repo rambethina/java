@@ -1,7 +1,7 @@
 ---
 title: Week Ten
 sidebar: mydoc_sidebar
-permalink: mydoc_week_ten_2022.html
+permalink: mydoc_week_ten.html
 folder: mydoc
 ---
 
