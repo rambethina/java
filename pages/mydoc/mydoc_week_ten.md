@@ -8,6 +8,8 @@ folder: mydoc
 ## Data structures
 
 * Map
+  * Example - Retrieving infromation where there is a large volume of data and we know the key.
+  * Example - Handling duplicates.
 
 ```java
 import java.util.HashMap;
@@ -147,66 +149,60 @@ class Main {
 * We will be using a [simulator](https://github.com/Beta8397/virtual_robot), Please download before next class
 
 
-## FINAL PROJECT
+## InClass Assignment
 
-* Due July 05 2022 (If you need more time let me know.)
-* You will need to complete the project to be eligible for credits from Maryville university.
-* You can join office hours if you need help.
+We will begin with last weeks homework....
 
-Let us build a simple eCommerce application similar to Amazon (But way simpler). Our eCommerce application has the following modules
+Lets begin implementation of the Cart class.
 
+Provide instance variables. (Cart contains a list of books.)
+Provide a constructor to instialize your instance variables.
+Provide implementations for the following methods.
+Add book to Cart: This method takes a book as an input argument and adds it to the list.
+getTotal: This method iterates over the list gets each books cost, adds it up and returns total.
+Change your main class ECommerceSimple to test your new Cart class. Sample Mock implementation below.
 
-* Inventory (Mandatory)
-* Checkout (Mandatory)
-* Registration & Login (Optional)
+Sample Main class Implementation
 
-You can use sample [Starter project](https://github.com/rambethina/ECommerceFinalStarter), Look at README.md for more instructions, For simplicity I divided the projects into 5 parts. Parts 1-3 are mandatory and 4, 5 are optional.
+```java
+public class ECommerceSimple {
 
-Our simple eCommerce should satisfy the following
+    public static void main(String[] args) {
+        Book javaBook = new Book("ISNB0001", "How to program in Java", "John Doe", 24.5);
+        javaBook.printBookDetails();
 
-Inventory
-* Users should be able to browse the list of books. We should display the list based on the inventory we have.
-* You can assume list of books in inventory will be provided in a flat file.(Sample file below) - [Read from a file](https://rambethina.github.io/java/mydoc_week_nine.html#working-with-files)
-* For each book users should see the following information
-    * ISBN number (unique identifier of a book)
-    * Title
-    * Cost
-    * Book Category. (Valid values being Educational, History, Travel, Cookings)
-    * Author.
-* Users should be able to choose a book and add it to their cart, remove it from their cart.
-* Users should be able to see total cost of their cart.
-* After a user checkouts, 
-    * inventory should be updated accordingly.
-    * Print cart details with total amount and shipping address.
+        Book cPlusPlusBook = new Book("ISNB0002", "How to program in c Plus Plus", "Sally Smith", 19.9);
+        cPlusPlusBook.printBookDetails();
 
+        Book bookInitializedFromLine = new Book("ISNB0003, How to program in JavaScript, Adam, 21.2");
 
+        /*
+        Initialize cart object.
 
-Registration & Login (OPTIONAL)
+        Cart myCart = new Cart();
+        myCart.addBook(javaBook);
+        myCart.addBook(cPlusPlusBook);
+        myCart.addBook(bookInitializedFromLine);
 
-* User should be able to register. During registration they will provide the following
-    * email address
-    * password
-    * first name
-    * last name
-    * shipping address (line1, line2, city, state, country, postal code)
-    * mailing address (line1, line2, city, state, country, postal code)
-    * phone number
-* After registration sanitize user input before storing in our database.(for now we will store in a file)
-    * You can look at previous assignments. (Sanitization steps will be added later, but for now assume that you will have to sanitize input)
-* Our eCommerce application should allow multiple users to register.
-* Registered users should be able to login with their email address and password.
+        double cartTotal = myCart.getTotal();
 
-SAMPLE FLAT FILE
-ISBN NUMBER, TITLE, PRICE, BOOK CATEGORY, AUTHOR
+        System.out.println("Cart Total: " + cartTotal);
+        */
+    }
+}
 ```
-ISBN001, How to program in cPlusPlus, 19.2, Educational, John Doe
-ISBN001, How to program in cPlusPlus, 19.2, Educational, John Doe
-ISBN002, How to program in Java, 22.6, Educational, Sally Smith
-ISBN003, Destinations of a life time, 6.99, Travel, James Madison
-ISBN004, Top 100 places to visit, 6.45, Travel, James Franklin
-ISBN005, French revolution, 12.33, History, Fances wade
-ISBN006, Civil war, 33.0, History, Davis Mark
-ISBN002, How to program in Java, 22.6, Educational, Sally Smith
-ISBN005, French revolution, 12.33, History, Fances wade
-ISBN003, Destinations of a life time, 6.99, Travel, James Madison
-```
+
+For in class exercise.
+
+Enhance our eCommerce application. Let us assume our we would also like to sell Computers. For each computer let us assume we would like to capture the following details
+
+* Serial Number - This is the unique identifier for a computer similar to ISBN Number for a book.
+* Brand - Examples Mac, Dell, HP
+* Cost
+
+Change your existing program to add computers to your cart.
+
+Couple of things you may want to do.
+
+* Create an interface or abstract class called Product and implement or extend `Product` so you can have a generic method in Cart called `addProduct`
+* In your Cart you may also want to have a list of products instead of a list of books or computers.
